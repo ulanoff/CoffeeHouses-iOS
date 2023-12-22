@@ -16,6 +16,10 @@
 		55065D6D2B35D3C600062EB4 /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D6C2B35D3C600062EB4 /* ApiConstants.swift */; };
 		55065D6F2B35D8B900062EB4 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D6E2B35D8B900062EB4 /* Token.swift */; };
 		55065D712B35DAA900062EB4 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D702B35DAA900062EB4 /* SignUpRequest.swift */; };
+		557A1FBF2B35E6120043AFBA /* LocationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A1FBE2B35E6120043AFBA /* LocationsService.swift */; };
+		557A1FC42B35E74A0043AFBA /* CoffeeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A1FC32B35E74A0043AFBA /* CoffeeLocation.swift */; };
+		557A1FC62B35E7840043AFBA /* MapPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A1FC52B35E7840043AFBA /* MapPoint.swift */; };
+		557A1FC82B35E82E0043AFBA /* LocationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A1FC72B35E82E0043AFBA /* LocationRequest.swift */; };
 		55EDBCC52B3573AC00ACC778 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EDBCC42B3573AC00ACC778 /* AppDelegate.swift */; };
 		55EDBCC72B3573AC00ACC778 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EDBCC62B3573AC00ACC778 /* SceneDelegate.swift */; };
 		55EDBCCE2B3573AD00ACC778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55EDBCCD2B3573AD00ACC778 /* Assets.xcassets */; };
@@ -33,6 +37,10 @@
 		55065D6C2B35D3C600062EB4 /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
 		55065D6E2B35D8B900062EB4 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		55065D702B35DAA900062EB4 /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
+		557A1FBE2B35E6120043AFBA /* LocationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsService.swift; sourceTree = "<group>"; };
+		557A1FC32B35E74A0043AFBA /* CoffeeLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeLocation.swift; sourceTree = "<group>"; };
+		557A1FC52B35E7840043AFBA /* MapPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPoint.swift; sourceTree = "<group>"; };
+		557A1FC72B35E82E0043AFBA /* LocationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRequest.swift; sourceTree = "<group>"; };
 		55EDBCC12B3573AC00ACC778 /* CoffeeHouses-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoffeeHouses-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55EDBCC42B3573AC00ACC778 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55EDBCC62B3573AC00ACC778 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +76,7 @@
 			children = (
 				55065D622B35D04400062EB4 /* Requests */,
 				55065D602B35CF2B00062EB4 /* AuthService.swift */,
+				557A1FBE2B35E6120043AFBA /* LocationsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -77,6 +86,7 @@
 			children = (
 				55065D692B35D35D00062EB4 /* SignInRequest.swift */,
 				55065D702B35DAA900062EB4 /* SignUpRequest.swift */,
+				557A1FC72B35E82E0043AFBA /* LocationRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -94,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				55065D6E2B35D8B900062EB4 /* Token.swift */,
+				557A1FC32B35E74A0043AFBA /* CoffeeLocation.swift */,
+				557A1FC52B35E7840043AFBA /* MapPoint.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -250,14 +262,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				55065D662B35D0E200062EB4 /* Credentials.swift in Sources */,
+				557A1FBF2B35E6120043AFBA /* LocationsService.swift in Sources */,
+				557A1FC82B35E82E0043AFBA /* LocationRequest.swift in Sources */,
 				55EDBCC52B3573AC00ACC778 /* AppDelegate.swift in Sources */,
 				55065D6D2B35D3C600062EB4 /* ApiConstants.swift in Sources */,
 				55065D5E2B35C66B00062EB4 /* NetworkTask.swift in Sources */,
 				55065D6A2B35D35D00062EB4 /* SignInRequest.swift in Sources */,
+				557A1FC42B35E74A0043AFBA /* CoffeeLocation.swift in Sources */,
 				55065D712B35DAA900062EB4 /* SignUpRequest.swift in Sources */,
 				55EDBD082B35C42500ACC778 /* TestViewController.swift in Sources */,
 				55EDBCC72B3573AC00ACC778 /* SceneDelegate.swift in Sources */,
 				55065D6F2B35D8B900062EB4 /* Token.swift in Sources */,
+				557A1FC62B35E7840043AFBA /* MapPoint.swift in Sources */,
 				55065D5A2B35C64000062EB4 /* NetworkClient.swift in Sources */,
 				55065D5C2B35C65300062EB4 /* NetworkRequest.swift in Sources */,
 				55065D612B35CF2B00062EB4 /* AuthService.swift in Sources */,
