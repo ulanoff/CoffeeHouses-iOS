@@ -7,21 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55065D5A2B35C64000062EB4 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D592B35C64000062EB4 /* NetworkClient.swift */; };
+		55065D5C2B35C65300062EB4 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D5B2B35C65300062EB4 /* NetworkRequest.swift */; };
+		55065D5E2B35C66B00062EB4 /* NetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D5D2B35C66B00062EB4 /* NetworkTask.swift */; };
+		55065D612B35CF2B00062EB4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D602B35CF2B00062EB4 /* AuthService.swift */; };
+		55065D662B35D0E200062EB4 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D652B35D0E200062EB4 /* Credentials.swift */; };
+		55065D6A2B35D35D00062EB4 /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D692B35D35D00062EB4 /* SignInRequest.swift */; };
+		55065D6D2B35D3C600062EB4 /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D6C2B35D3C600062EB4 /* ApiConstants.swift */; };
+		55065D6F2B35D8B900062EB4 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D6E2B35D8B900062EB4 /* Token.swift */; };
+		55065D712B35DAA900062EB4 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D702B35DAA900062EB4 /* SignUpRequest.swift */; };
 		55EDBCC52B3573AC00ACC778 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EDBCC42B3573AC00ACC778 /* AppDelegate.swift */; };
 		55EDBCC72B3573AC00ACC778 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EDBCC62B3573AC00ACC778 /* SceneDelegate.swift */; };
 		55EDBCCE2B3573AD00ACC778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55EDBCCD2B3573AD00ACC778 /* Assets.xcassets */; };
 		55EDBCD12B3573AD00ACC778 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55EDBCCF2B3573AD00ACC778 /* LaunchScreen.storyboard */; };
-		55EDBCFF2B35BA1100ACC778 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EDBCFE2B35BA1100ACC778 /* TestViewController.swift */; };
+		55EDBD082B35C42500ACC778 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EDBD072B35C42500ACC778 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55065D592B35C64000062EB4 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		55065D5B2B35C65300062EB4 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		55065D5D2B35C66B00062EB4 /* NetworkTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTask.swift; sourceTree = "<group>"; };
+		55065D602B35CF2B00062EB4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		55065D652B35D0E200062EB4 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		55065D692B35D35D00062EB4 /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequest.swift; sourceTree = "<group>"; };
+		55065D6C2B35D3C600062EB4 /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
+		55065D6E2B35D8B900062EB4 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		55065D702B35DAA900062EB4 /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
 		55EDBCC12B3573AC00ACC778 /* CoffeeHouses-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoffeeHouses-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55EDBCC42B3573AC00ACC778 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55EDBCC62B3573AC00ACC778 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		55EDBCCD2B3573AD00ACC778 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55EDBCD02B3573AD00ACC778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55EDBCD22B3573AD00ACC778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55EDBCFE2B35BA1100ACC778 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		55EDBD072B35C42500ACC778 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +53,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55065D582B35C63000062EB4 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				55065D592B35C64000062EB4 /* NetworkClient.swift */,
+				55065D5B2B35C65300062EB4 /* NetworkRequest.swift */,
+				55065D5D2B35C66B00062EB4 /* NetworkTask.swift */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
+		55065D5F2B35CEF100062EB4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				55065D622B35D04400062EB4 /* Requests */,
+				55065D602B35CF2B00062EB4 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		55065D622B35D04400062EB4 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				55065D692B35D35D00062EB4 /* SignInRequest.swift */,
+				55065D702B35DAA900062EB4 /* SignUpRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		55065D632B35D08200062EB4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				55065D642B35D08D00062EB4 /* Network */,
+				55065D652B35D0E200062EB4 /* Credentials.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		55065D642B35D08D00062EB4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				55065D6E2B35D8B900062EB4 /* Token.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		55065D6B2B35D3AB00062EB4 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				55065D6C2B35D3C600062EB4 /* ApiConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		55EDBCB82B3573AC00ACC778 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +125,12 @@
 		55EDBCC32B3573AC00ACC778 /* CoffeeHouses-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				55065D6B2B35D3AB00062EB4 /* Constants */,
 				55EDBD002B35BB2F00ACC778 /* Application */,
-				55EDBD032B35BB5100ACC778 /* TestModule */,
+				55EDBD0A2B35C4D500ACC778 /* Foundation */,
+				55065D632B35D08200062EB4 /* Models */,
+				55065D5F2B35CEF100062EB4 /* Services */,
+				55EDBD062B35C41800ACC778 /* TestModule */,
 				55EDBCDA2B3574C300ACC778 /* Resources */,
 				55EDBCD92B3574B400ACC778 /* Supporting */,
 			);
@@ -88,12 +163,20 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		55EDBD032B35BB5100ACC778 /* TestModule */ = {
+		55EDBD062B35C41800ACC778 /* TestModule */ = {
 			isa = PBXGroup;
 			children = (
-				55EDBCFE2B35BA1100ACC778 /* TestViewController.swift */,
+				55EDBD072B35C42500ACC778 /* TestViewController.swift */,
 			);
 			path = TestModule;
+			sourceTree = "<group>";
+		};
+		55EDBD0A2B35C4D500ACC778 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				55065D582B35C63000062EB4 /* NetworkClient */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +249,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55065D662B35D0E200062EB4 /* Credentials.swift in Sources */,
 				55EDBCC52B3573AC00ACC778 /* AppDelegate.swift in Sources */,
+				55065D6D2B35D3C600062EB4 /* ApiConstants.swift in Sources */,
+				55065D5E2B35C66B00062EB4 /* NetworkTask.swift in Sources */,
+				55065D6A2B35D35D00062EB4 /* SignInRequest.swift in Sources */,
+				55065D712B35DAA900062EB4 /* SignUpRequest.swift in Sources */,
+				55EDBD082B35C42500ACC778 /* TestViewController.swift in Sources */,
 				55EDBCC72B3573AC00ACC778 /* SceneDelegate.swift in Sources */,
-				55EDBCFF2B35BA1100ACC778 /* TestViewController.swift in Sources */,
+				55065D6F2B35D8B900062EB4 /* Token.swift in Sources */,
+				55065D5A2B35C64000062EB4 /* NetworkClient.swift in Sources */,
+				55065D5C2B35C65300062EB4 /* NetworkRequest.swift in Sources */,
+				55065D612B35CF2B00062EB4 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
