@@ -9,21 +9,19 @@
 /* Begin PBXBuildFile section */
 		55EDBCC52B3573AC00ACC778 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EDBCC42B3573AC00ACC778 /* AppDelegate.swift */; };
 		55EDBCC72B3573AC00ACC778 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EDBCC62B3573AC00ACC778 /* SceneDelegate.swift */; };
-		55EDBCC92B3573AC00ACC778 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EDBCC82B3573AC00ACC778 /* ViewController.swift */; };
-		55EDBCCC2B3573AC00ACC778 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55EDBCCA2B3573AC00ACC778 /* Main.storyboard */; };
 		55EDBCCE2B3573AD00ACC778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55EDBCCD2B3573AD00ACC778 /* Assets.xcassets */; };
 		55EDBCD12B3573AD00ACC778 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55EDBCCF2B3573AD00ACC778 /* LaunchScreen.storyboard */; };
+		55EDBCFF2B35BA1100ACC778 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EDBCFE2B35BA1100ACC778 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		55EDBCC12B3573AC00ACC778 /* CoffeeHouses-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoffeeHouses-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55EDBCC42B3573AC00ACC778 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55EDBCC62B3573AC00ACC778 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		55EDBCC82B3573AC00ACC778 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		55EDBCCB2B3573AC00ACC778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55EDBCCD2B3573AD00ACC778 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55EDBCD02B3573AD00ACC778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55EDBCD22B3573AD00ACC778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55EDBCFE2B35BA1100ACC778 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +54,46 @@
 		55EDBCC32B3573AC00ACC778 /* CoffeeHouses-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				55EDBCC42B3573AC00ACC778 /* AppDelegate.swift */,
-				55EDBCC62B3573AC00ACC778 /* SceneDelegate.swift */,
-				55EDBCC82B3573AC00ACC778 /* ViewController.swift */,
-				55EDBCCA2B3573AC00ACC778 /* Main.storyboard */,
-				55EDBCCD2B3573AD00ACC778 /* Assets.xcassets */,
-				55EDBCCF2B3573AD00ACC778 /* LaunchScreen.storyboard */,
-				55EDBCD22B3573AD00ACC778 /* Info.plist */,
+				55EDBD002B35BB2F00ACC778 /* Application */,
+				55EDBD032B35BB5100ACC778 /* TestModule */,
+				55EDBCDA2B3574C300ACC778 /* Resources */,
+				55EDBCD92B3574B400ACC778 /* Supporting */,
 			);
 			path = "CoffeeHouses-iOS";
+			sourceTree = "<group>";
+		};
+		55EDBCD92B3574B400ACC778 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				55EDBCD22B3573AD00ACC778 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		55EDBCDA2B3574C300ACC778 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				55EDBCCD2B3573AD00ACC778 /* Assets.xcassets */,
+				55EDBCCF2B3573AD00ACC778 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		55EDBD002B35BB2F00ACC778 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				55EDBCC42B3573AC00ACC778 /* AppDelegate.swift */,
+				55EDBCC62B3573AC00ACC778 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		55EDBD032B35BB5100ACC778 /* TestModule */ = {
+			isa = PBXGroup;
+			children = (
+				55EDBCFE2B35BA1100ACC778 /* TestViewController.swift */,
+			);
+			path = TestModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +156,6 @@
 			files = (
 				55EDBCD12B3573AD00ACC778 /* LaunchScreen.storyboard in Resources */,
 				55EDBCCE2B3573AD00ACC778 /* Assets.xcassets in Resources */,
-				55EDBCCC2B3573AC00ACC778 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +166,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55EDBCC92B3573AC00ACC778 /* ViewController.swift in Sources */,
 				55EDBCC52B3573AC00ACC778 /* AppDelegate.swift in Sources */,
 				55EDBCC72B3573AC00ACC778 /* SceneDelegate.swift in Sources */,
+				55EDBCFF2B35BA1100ACC778 /* TestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		55EDBCCA2B3573AC00ACC778 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				55EDBCCB2B3573AC00ACC778 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		55EDBCCF2B3573AD00ACC778 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,10 +314,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DSCAQDF936;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "CoffeeHouses-iOS/Info.plist";
+				INFOPLIST_FILE = "CoffeeHouses-iOS/Supporting/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,10 +341,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DSCAQDF936;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "CoffeeHouses-iOS/Info.plist";
+				INFOPLIST_FILE = "CoffeeHouses-iOS/Supporting/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
