@@ -20,6 +20,9 @@
 		557A1FC42B35E74A0043AFBA /* CoffeeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A1FC32B35E74A0043AFBA /* CoffeeLocation.swift */; };
 		557A1FC62B35E7840043AFBA /* MapPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A1FC52B35E7840043AFBA /* MapPoint.swift */; };
 		557A1FC82B35E82E0043AFBA /* LocationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A1FC72B35E82E0043AFBA /* LocationRequest.swift */; };
+		557A1FCB2B35FA5B0043AFBA /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 557A1FCA2B35FA5B0043AFBA /* KeychainSwift */; };
+		557A1FCE2B35FAA60043AFBA /* AuthTokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A1FCD2B35FAA60043AFBA /* AuthTokenStorage.swift */; };
+		557A1FD02B35FB5D0043AFBA /* KeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A1FCF2B35FB5D0043AFBA /* KeychainConstants.swift */; };
 		55EDBCC52B3573AC00ACC778 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EDBCC42B3573AC00ACC778 /* AppDelegate.swift */; };
 		55EDBCC72B3573AC00ACC778 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EDBCC62B3573AC00ACC778 /* SceneDelegate.swift */; };
 		55EDBCCE2B3573AD00ACC778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55EDBCCD2B3573AD00ACC778 /* Assets.xcassets */; };
@@ -41,6 +44,8 @@
 		557A1FC32B35E74A0043AFBA /* CoffeeLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeLocation.swift; sourceTree = "<group>"; };
 		557A1FC52B35E7840043AFBA /* MapPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPoint.swift; sourceTree = "<group>"; };
 		557A1FC72B35E82E0043AFBA /* LocationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRequest.swift; sourceTree = "<group>"; };
+		557A1FCD2B35FAA60043AFBA /* AuthTokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTokenStorage.swift; sourceTree = "<group>"; };
+		557A1FCF2B35FB5D0043AFBA /* KeychainConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainConstants.swift; sourceTree = "<group>"; };
 		55EDBCC12B3573AC00ACC778 /* CoffeeHouses-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoffeeHouses-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55EDBCC42B3573AC00ACC778 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55EDBCC62B3573AC00ACC778 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				557A1FCB2B35FA5B0043AFBA /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,8 +120,17 @@
 			isa = PBXGroup;
 			children = (
 				55065D6C2B35D3C600062EB4 /* ApiConstants.swift */,
+				557A1FCF2B35FB5D0043AFBA /* KeychainConstants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		557A1FCC2B35FA660043AFBA /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				557A1FCD2B35FAA60043AFBA /* AuthTokenStorage.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		55EDBCB82B3573AC00ACC778 = {
@@ -141,6 +156,7 @@
 				55EDBD002B35BB2F00ACC778 /* Application */,
 				55EDBD0A2B35C4D500ACC778 /* Foundation */,
 				55065D632B35D08200062EB4 /* Models */,
+				557A1FCC2B35FA660043AFBA /* Storage */,
 				55065D5F2B35CEF100062EB4 /* Services */,
 				55EDBD062B35C41800ACC778 /* TestModule */,
 				55EDBCDA2B3574C300ACC778 /* Resources */,
@@ -207,6 +223,9 @@
 			dependencies = (
 			);
 			name = "CoffeeHouses-iOS";
+			packageProductDependencies = (
+				557A1FCA2B35FA5B0043AFBA /* KeychainSwift */,
+			);
 			productName = "CoffeeHouses-iOS";
 			productReference = 55EDBCC12B3573AC00ACC778 /* CoffeeHouses-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -235,6 +254,9 @@
 				Base,
 			);
 			mainGroup = 55EDBCB82B3573AC00ACC778;
+			packageReferences = (
+				557A1FC92B35FA5B0043AFBA /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = 55EDBCC22B3573AC00ACC778 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -271,6 +293,8 @@
 				557A1FC42B35E74A0043AFBA /* CoffeeLocation.swift in Sources */,
 				55065D712B35DAA900062EB4 /* SignUpRequest.swift in Sources */,
 				55EDBD082B35C42500ACC778 /* TestViewController.swift in Sources */,
+				557A1FCE2B35FAA60043AFBA /* AuthTokenStorage.swift in Sources */,
+				557A1FD02B35FB5D0043AFBA /* KeychainConstants.swift in Sources */,
 				55EDBCC72B3573AC00ACC778 /* SceneDelegate.swift in Sources */,
 				55065D6F2B35D8B900062EB4 /* Token.swift in Sources */,
 				557A1FC62B35E7840043AFBA /* MapPoint.swift in Sources */,
@@ -489,6 +513,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		557A1FC92B35FA5B0043AFBA /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 20.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		557A1FCA2B35FA5B0043AFBA /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 557A1FC92B35FA5B0043AFBA /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 55EDBCB92B3573AC00ACC778 /* Project object */;
 }

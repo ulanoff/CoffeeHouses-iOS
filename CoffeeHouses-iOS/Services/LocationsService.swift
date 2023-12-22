@@ -16,15 +16,15 @@ protocol LocationsService {
 final class LocationsServiceImpl: LocationsService {
     
     private let networkClient: NetworkClient
+    private let token: String
     
-    init(networkClient: NetworkClient) {
+    init(networkClient: NetworkClient, token: String) {
         self.networkClient = networkClient
+        self.token = token
     }
     
     func loadLocations(completion: @escaping LocationsCompletion) {
-        // TODO: - Replace with real token
-        let testToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJBdXRoZW50aWNhdGlvbiIsImlzcyI6ImNvZmZlZSBiYWNrZW5kIiwiaWQiOjEyOSwiZXhwIjoxNzAzMjY3MjYwfQ.5nMKWel13QwAJj8DB3orPZSvGwL23WEE0FHav3U_u6w"
-        let request = LocationRequest(token: testToken)
+        let request = LocationRequest(token: token)
         networkClient.send(request: request, type: [CoffeeLocation].self) { result in
             switch result {
             case .success(let location):
