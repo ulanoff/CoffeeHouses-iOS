@@ -134,7 +134,7 @@ struct DefaultNetworkClient: NetworkClient {
 
         if let token = request.authToken,
            let tokenHeader = request.authTokenHeader {
-            urlRequest.setValue("Beared \(token)", forHTTPHeaderField: tokenHeader)
+            urlRequest.setValue("Bearer \(token)", forHTTPHeaderField: tokenHeader)
         }
 
         return urlRequest
