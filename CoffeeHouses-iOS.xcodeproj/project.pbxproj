@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55002AD62B36DF4E008E5560 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55002AD82B36DF4E008E5560 /* Localizable.strings */; };
+		55002ADD2B36DFE5008E5560 /* NSLocalizedStringPostfixOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55002ADC2B36DFE5008E5560 /* NSLocalizedStringPostfixOperator.swift */; };
 		55065D5A2B35C64000062EB4 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D592B35C64000062EB4 /* NetworkClient.swift */; };
 		55065D5C2B35C65300062EB4 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D5B2B35C65300062EB4 /* NetworkRequest.swift */; };
 		55065D5E2B35C66B00062EB4 /* NetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D5D2B35C66B00062EB4 /* NetworkTask.swift */; };
@@ -35,6 +37,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55002AD72B36DF4E008E5560 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		55002AD92B36DF79008E5560 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		55002ADA2B36DF79008E5560 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		55002ADC2B36DFE5008E5560 /* NSLocalizedStringPostfixOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLocalizedStringPostfixOperator.swift; sourceTree = "<group>"; };
 		55065D592B35C64000062EB4 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		55065D5B2B35C65300062EB4 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		55065D5D2B35C66B00062EB4 /* NetworkTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTask.swift; sourceTree = "<group>"; };
@@ -75,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55002ADB2B36DFC7008E5560 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				55002ADC2B36DFE5008E5560 /* NSLocalizedStringPostfixOperator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		55065D582B35C63000062EB4 /* NetworkClient */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +187,7 @@
 				55EDBD062B35C41800ACC778 /* TestModule */,
 				55EDBCDA2B3574C300ACC778 /* Resources */,
 				55EDBCD92B3574B400ACC778 /* Supporting */,
+				55002AD82B36DF4E008E5560 /* Localizable.strings */,
 			);
 			path = "CoffeeHouses-iOS";
 			sourceTree = "<group>";
@@ -214,6 +229,7 @@
 		55EDBD0A2B35C4D500ACC778 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				55002ADB2B36DFC7008E5560 /* Helpers */,
 				55065D582B35C63000062EB4 /* NetworkClient */,
 			);
 			path = Foundation;
@@ -264,6 +280,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 55EDBCB82B3573AC00ACC778;
 			packageReferences = (
@@ -284,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55EDBCD12B3573AD00ACC778 /* LaunchScreen.storyboard in Resources */,
+				55002AD62B36DF4E008E5560 /* Localizable.strings in Resources */,
 				55EDBCCE2B3573AD00ACC778 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +320,7 @@
 				55EDBCC52B3573AC00ACC778 /* AppDelegate.swift in Sources */,
 				55065D6D2B35D3C600062EB4 /* ApiConstants.swift in Sources */,
 				55065D5E2B35C66B00062EB4 /* NetworkTask.swift in Sources */,
+				55002ADD2B36DFE5008E5560 /* NSLocalizedStringPostfixOperator.swift in Sources */,
 				557A1FD62B36007C0043AFBA /* LocationMenuRequest.swift in Sources */,
 				55065D6A2B35D35D00062EB4 /* SignInRequest.swift in Sources */,
 				557A1FC42B35E74A0043AFBA /* CoffeeLocation.swift in Sources */,
@@ -323,10 +342,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		55002AD82B36DF4E008E5560 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55002AD72B36DF4E008E5560 /* en */,
+				55002ADA2B36DF79008E5560 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		55EDBCCF2B3573AD00ACC778 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				55EDBCD02B3573AD00ACC778 /* Base */,
+				55002AD92B36DF79008E5560 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -339,6 +368,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -402,6 +432,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
