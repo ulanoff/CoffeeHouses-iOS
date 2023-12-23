@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55002AD12B36DDB9008E5560 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 55002AD02B36DDB9008E5560 /* SnapKit */; };
+		55002AD32B36DDB9008E5560 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 55002AD22B36DDB9008E5560 /* SnapKit-Dynamic */; };
 		55002AD62B36DF4E008E5560 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55002AD82B36DF4E008E5560 /* Localizable.strings */; };
 		55002ADD2B36DFE5008E5560 /* NSLocalizedStringPostfixOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55002ADC2B36DFE5008E5560 /* NSLocalizedStringPostfixOperator.swift */; };
+		55002AE02B36E10C008E5560 /* CHTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55002ADF2B36E10C008E5560 /* CHTextField.swift */; };
 		55065D5A2B35C64000062EB4 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D592B35C64000062EB4 /* NetworkClient.swift */; };
 		55065D5C2B35C65300062EB4 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D5B2B35C65300062EB4 /* NetworkRequest.swift */; };
 		55065D5E2B35C66B00062EB4 /* NetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D5D2B35C66B00062EB4 /* NetworkTask.swift */; };
@@ -41,6 +44,7 @@
 		55002AD92B36DF79008E5560 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		55002ADA2B36DF79008E5560 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		55002ADC2B36DFE5008E5560 /* NSLocalizedStringPostfixOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLocalizedStringPostfixOperator.swift; sourceTree = "<group>"; };
+		55002ADF2B36E10C008E5560 /* CHTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHTextField.swift; sourceTree = "<group>"; };
 		55065D592B35C64000062EB4 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		55065D5B2B35C65300062EB4 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		55065D5D2B35C66B00062EB4 /* NetworkTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTask.swift; sourceTree = "<group>"; };
@@ -75,18 +79,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				557A1FCB2B35FA5B0043AFBA /* KeychainSwift in Frameworks */,
+				55002AD12B36DDB9008E5560 /* SnapKit in Frameworks */,
+				55002AD32B36DDB9008E5560 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55002AC22B36D9BF008E5560 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				55EDBD062B35C41800ACC778 /* TestModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		55002ACE2B36DA35008E5560 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				55002ADE2B36E0FD008E5560 /* CustomViews */,
+				55002AC22B36D9BF008E5560 /* Modules */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		55002ADB2B36DFC7008E5560 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				55002ADC2B36DFE5008E5560 /* NSLocalizedStringPostfixOperator.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		55002ADE2B36E0FD008E5560 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				55002ADF2B36E10C008E5560 /* CHTextField.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		55065D582B35C63000062EB4 /* NetworkClient */ = {
@@ -178,13 +209,13 @@
 		55EDBCC32B3573AC00ACC778 /* CoffeeHouses-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				55002ACE2B36DA35008E5560 /* UI */,
 				55065D6B2B35D3AB00062EB4 /* Constants */,
 				55EDBD002B35BB2F00ACC778 /* Application */,
 				55EDBD0A2B35C4D500ACC778 /* Foundation */,
 				55065D632B35D08200062EB4 /* Models */,
 				557A1FCC2B35FA660043AFBA /* Storage */,
 				55065D5F2B35CEF100062EB4 /* Services */,
-				55EDBD062B35C41800ACC778 /* TestModule */,
 				55EDBCDA2B3574C300ACC778 /* Resources */,
 				55EDBCD92B3574B400ACC778 /* Supporting */,
 				55002AD82B36DF4E008E5560 /* Localizable.strings */,
@@ -253,6 +284,8 @@
 			name = "CoffeeHouses-iOS";
 			packageProductDependencies = (
 				557A1FCA2B35FA5B0043AFBA /* KeychainSwift */,
+				55002AD02B36DDB9008E5560 /* SnapKit */,
+				55002AD22B36DDB9008E5560 /* SnapKit-Dynamic */,
 			);
 			productName = "CoffeeHouses-iOS";
 			productReference = 55EDBCC12B3573AC00ACC778 /* CoffeeHouses-iOS.app */;
@@ -285,6 +318,7 @@
 			mainGroup = 55EDBCB82B3573AC00ACC778;
 			packageReferences = (
 				557A1FC92B35FA5B0043AFBA /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				55002ACF2B36DDB9008E5560 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 55EDBCC22B3573AC00ACC778 /* Products */;
 			projectDirPath = "";
@@ -322,6 +356,7 @@
 				55065D5E2B35C66B00062EB4 /* NetworkTask.swift in Sources */,
 				55002ADD2B36DFE5008E5560 /* NSLocalizedStringPostfixOperator.swift in Sources */,
 				557A1FD62B36007C0043AFBA /* LocationMenuRequest.swift in Sources */,
+				55002AE02B36E10C008E5560 /* CHTextField.swift in Sources */,
 				55065D6A2B35D35D00062EB4 /* SignInRequest.swift in Sources */,
 				557A1FC42B35E74A0043AFBA /* CoffeeLocation.swift in Sources */,
 				55065D712B35DAA900062EB4 /* SignUpRequest.swift in Sources */,
@@ -562,6 +597,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		55002ACF2B36DDB9008E5560 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
 		557A1FC92B35FA5B0043AFBA /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
@@ -573,6 +616,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		55002AD02B36DDB9008E5560 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55002ACF2B36DDB9008E5560 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		55002AD22B36DDB9008E5560 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55002ACF2B36DDB9008E5560 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
 		557A1FCA2B35FA5B0043AFBA /* KeychainSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 557A1FC92B35FA5B0043AFBA /* XCRemoteSwiftPackageReference "keychain-swift" */;
