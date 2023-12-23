@@ -12,6 +12,7 @@
 		55002AD62B36DF4E008E5560 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55002AD82B36DF4E008E5560 /* Localizable.strings */; };
 		55002ADD2B36DFE5008E5560 /* NSLocalizedStringPostfixOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55002ADC2B36DFE5008E5560 /* NSLocalizedStringPostfixOperator.swift */; };
 		55002AE02B36E10C008E5560 /* CHTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55002ADF2B36E10C008E5560 /* CHTextField.swift */; };
+		55002AE22B3741E7008E5560 /* CHButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55002AE12B3741E7008E5560 /* CHButton.swift */; };
 		55065D5A2B35C64000062EB4 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D592B35C64000062EB4 /* NetworkClient.swift */; };
 		55065D5C2B35C65300062EB4 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D5B2B35C65300062EB4 /* NetworkRequest.swift */; };
 		55065D5E2B35C66B00062EB4 /* NetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D5D2B35C66B00062EB4 /* NetworkTask.swift */; };
@@ -45,6 +46,7 @@
 		55002ADA2B36DF79008E5560 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		55002ADC2B36DFE5008E5560 /* NSLocalizedStringPostfixOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLocalizedStringPostfixOperator.swift; sourceTree = "<group>"; };
 		55002ADF2B36E10C008E5560 /* CHTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHTextField.swift; sourceTree = "<group>"; };
+		55002AE12B3741E7008E5560 /* CHButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHButton.swift; sourceTree = "<group>"; };
 		55065D592B35C64000062EB4 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		55065D5B2B35C65300062EB4 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		55065D5D2B35C66B00062EB4 /* NetworkTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTask.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				55002ADF2B36E10C008E5560 /* CHTextField.swift */,
+				55002AE12B3741E7008E5560 /* CHButton.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				55EDBD082B35C42500ACC778 /* TestViewController.swift in Sources */,
 				557A1FCE2B35FAA60043AFBA /* AuthTokenStorage.swift in Sources */,
 				557A1FD02B35FB5D0043AFBA /* KeychainConstants.swift in Sources */,
+				55002AE22B3741E7008E5560 /* CHButton.swift in Sources */,
 				55EDBCC72B3573AC00ACC778 /* SceneDelegate.swift in Sources */,
 				557A1FD82B3601E50043AFBA /* CoffeeLocationMenu.swift in Sources */,
 				55065D6F2B35D8B900062EB4 /* Token.swift in Sources */,
