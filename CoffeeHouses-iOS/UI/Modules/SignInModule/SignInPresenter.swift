@@ -51,14 +51,19 @@ extension SignInPresenter: SignInPresenterProtocol {
     }
     
     func authError(error: Error) {
-        guard let error = error as? NetworkClientError else { return }
         view?.hideLoader()
-        switch error {
-        case .httpStatusCode(let code):
-            if code == 401 {
-                view?.showError(error: .wrongCredentials)
+        if let error = error as? NetworkClientError {
+            switch error {
+            case .httpStatusCode(let code):
+                if code == 401 {
+                    view?.showError(error: .wrongCredentials)
+                } else {
+                    view?.showError(error: .unknownError)
+                }
+            default:
+                view?.showError(error: .unknownError)
             }
-        default:
+        } else {
             view?.showError(error: .unknownError)
         }
     }
