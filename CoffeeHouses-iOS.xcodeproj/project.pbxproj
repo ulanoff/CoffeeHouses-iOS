@@ -13,6 +13,12 @@
 		55002ADD2B36DFE5008E5560 /* NSLocalizedStringPostfixOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55002ADC2B36DFE5008E5560 /* NSLocalizedStringPostfixOperator.swift */; };
 		55002AE02B36E10C008E5560 /* CHTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55002ADF2B36E10C008E5560 /* CHTextField.swift */; };
 		55002AE22B3741E7008E5560 /* CHButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55002AE12B3741E7008E5560 /* CHButton.swift */; };
+		55002AEB2B375260008E5560 /* SignInModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55002AE62B375260008E5560 /* SignInModuleBuilder.swift */; };
+		55002AEC2B375260008E5560 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55002AE72B375260008E5560 /* SignInPresenter.swift */; };
+		55002AED2B375260008E5560 /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55002AE82B375260008E5560 /* SignInRouter.swift */; };
+		55002AEE2B375260008E5560 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55002AE92B375260008E5560 /* SignInViewController.swift */; };
+		55002AEF2B375260008E5560 /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55002AEA2B375260008E5560 /* SignInInteractor.swift */; };
+		55002AF12B375CF8008E5560 /* CHTextFieldWithLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55002AF02B375CF8008E5560 /* CHTextFieldWithLabel.swift */; };
 		55065D5A2B35C64000062EB4 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D592B35C64000062EB4 /* NetworkClient.swift */; };
 		55065D5C2B35C65300062EB4 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D5B2B35C65300062EB4 /* NetworkRequest.swift */; };
 		55065D5E2B35C66B00062EB4 /* NetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55065D5D2B35C66B00062EB4 /* NetworkTask.swift */; };
@@ -33,6 +39,10 @@
 		557A1FD42B35FFD60043AFBA /* CoffeeLocationMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A1FD32B35FFD60043AFBA /* CoffeeLocationMenuItem.swift */; };
 		557A1FD62B36007C0043AFBA /* LocationMenuRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A1FD52B36007C0043AFBA /* LocationMenuRequest.swift */; };
 		557A1FD82B3601E50043AFBA /* CoffeeLocationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A1FD72B3601E50043AFBA /* CoffeeLocationMenu.swift */; };
+		55CCBC042B3842C400ACC2C8 /* SignInError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC032B3842C400ACC2C8 /* SignInError.swift */; };
+		55CCBC072B385E1000ACC2C8 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 55CCBC062B385E1000ACC2C8 /* ProgressHUD */; };
+		55CCBC0A2B385EC300ACC2C8 /* UIBlockingProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC092B385EC300ACC2C8 /* UIBlockingProgressHUD.swift */; };
+		55CCBC0C2B3864E500ACC2C8 /* UIViewController+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC0B2B3864E500ACC2C8 /* UIViewController+ext.swift */; };
 		55EDBCC52B3573AC00ACC778 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EDBCC42B3573AC00ACC778 /* AppDelegate.swift */; };
 		55EDBCC72B3573AC00ACC778 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EDBCC62B3573AC00ACC778 /* SceneDelegate.swift */; };
 		55EDBCCE2B3573AD00ACC778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55EDBCCD2B3573AD00ACC778 /* Assets.xcassets */; };
@@ -47,6 +57,12 @@
 		55002ADC2B36DFE5008E5560 /* NSLocalizedStringPostfixOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLocalizedStringPostfixOperator.swift; sourceTree = "<group>"; };
 		55002ADF2B36E10C008E5560 /* CHTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHTextField.swift; sourceTree = "<group>"; };
 		55002AE12B3741E7008E5560 /* CHButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHButton.swift; sourceTree = "<group>"; };
+		55002AE62B375260008E5560 /* SignInModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModuleBuilder.swift; sourceTree = "<group>"; };
+		55002AE72B375260008E5560 /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		55002AE82B375260008E5560 /* SignInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
+		55002AE92B375260008E5560 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		55002AEA2B375260008E5560 /* SignInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
+		55002AF02B375CF8008E5560 /* CHTextFieldWithLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHTextFieldWithLabel.swift; sourceTree = "<group>"; };
 		55065D592B35C64000062EB4 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		55065D5B2B35C65300062EB4 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		55065D5D2B35C66B00062EB4 /* NetworkTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTask.swift; sourceTree = "<group>"; };
@@ -66,6 +82,9 @@
 		557A1FD32B35FFD60043AFBA /* CoffeeLocationMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeLocationMenuItem.swift; sourceTree = "<group>"; };
 		557A1FD52B36007C0043AFBA /* LocationMenuRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMenuRequest.swift; sourceTree = "<group>"; };
 		557A1FD72B3601E50043AFBA /* CoffeeLocationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeLocationMenu.swift; sourceTree = "<group>"; };
+		55CCBC032B3842C400ACC2C8 /* SignInError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInError.swift; sourceTree = "<group>"; };
+		55CCBC092B385EC300ACC2C8 /* UIBlockingProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBlockingProgressHUD.swift; sourceTree = "<group>"; };
+		55CCBC0B2B3864E500ACC2C8 /* UIViewController+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ext.swift"; sourceTree = "<group>"; };
 		55EDBCC12B3573AC00ACC778 /* CoffeeHouses-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoffeeHouses-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55EDBCC42B3573AC00ACC778 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55EDBCC62B3573AC00ACC778 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +100,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				557A1FCB2B35FA5B0043AFBA /* KeychainSwift in Frameworks */,
+				55CCBC072B385E1000ACC2C8 /* ProgressHUD in Frameworks */,
 				55002AD12B36DDB9008E5560 /* SnapKit in Frameworks */,
 				55002AD32B36DDB9008E5560 /* SnapKit-Dynamic in Frameworks */,
 			);
@@ -92,6 +112,7 @@
 		55002AC22B36D9BF008E5560 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				55002AE52B37524B008E5560 /* SignInModule */,
 				55EDBD062B35C41800ACC778 /* TestModule */,
 			);
 			path = Modules;
@@ -110,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				55002ADC2B36DFE5008E5560 /* NSLocalizedStringPostfixOperator.swift */,
+				55CCBC0B2B3864E500ACC2C8 /* UIViewController+ext.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -119,8 +141,23 @@
 			children = (
 				55002ADF2B36E10C008E5560 /* CHTextField.swift */,
 				55002AE12B3741E7008E5560 /* CHButton.swift */,
+				55002AF02B375CF8008E5560 /* CHTextFieldWithLabel.swift */,
+				55CCBC092B385EC300ACC2C8 /* UIBlockingProgressHUD.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		55002AE52B37524B008E5560 /* SignInModule */ = {
+			isa = PBXGroup;
+			children = (
+				55CCBC022B3842B400ACC2C8 /* Models */,
+				55002AE62B375260008E5560 /* SignInModuleBuilder.swift */,
+				55002AE72B375260008E5560 /* SignInPresenter.swift */,
+				55002AE82B375260008E5560 /* SignInRouter.swift */,
+				55002AE92B375260008E5560 /* SignInViewController.swift */,
+				55002AEA2B375260008E5560 /* SignInInteractor.swift */,
+			);
+			path = SignInModule;
 			sourceTree = "<group>";
 		};
 		55065D582B35C63000062EB4 /* NetworkClient */ = {
@@ -191,6 +228,14 @@
 				557A1FCD2B35FAA60043AFBA /* AuthTokenStorage.swift */,
 			);
 			path = Storage;
+			sourceTree = "<group>";
+		};
+		55CCBC022B3842B400ACC2C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				55CCBC032B3842C400ACC2C8 /* SignInError.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		55EDBCB82B3573AC00ACC778 = {
@@ -289,6 +334,7 @@
 				557A1FCA2B35FA5B0043AFBA /* KeychainSwift */,
 				55002AD02B36DDB9008E5560 /* SnapKit */,
 				55002AD22B36DDB9008E5560 /* SnapKit-Dynamic */,
+				55CCBC062B385E1000ACC2C8 /* ProgressHUD */,
 			);
 			productName = "CoffeeHouses-iOS";
 			productReference = 55EDBCC12B3573AC00ACC778 /* CoffeeHouses-iOS.app */;
@@ -322,6 +368,7 @@
 			packageReferences = (
 				557A1FC92B35FA5B0043AFBA /* XCRemoteSwiftPackageReference "keychain-swift" */,
 				55002ACF2B36DDB9008E5560 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				55CCBC052B385E0F00ACC2C8 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
 			);
 			productRefGroup = 55EDBCC22B3573AC00ACC778 /* Products */;
 			projectDirPath = "";
@@ -352,6 +399,7 @@
 			files = (
 				55065D662B35D0E200062EB4 /* Credentials.swift in Sources */,
 				557A1FD42B35FFD60043AFBA /* CoffeeLocationMenuItem.swift in Sources */,
+				55002AF12B375CF8008E5560 /* CHTextFieldWithLabel.swift in Sources */,
 				557A1FBF2B35E6120043AFBA /* LocationsService.swift in Sources */,
 				557A1FC82B35E82E0043AFBA /* LocationRequest.swift in Sources */,
 				55EDBCC52B3573AC00ACC778 /* AppDelegate.swift in Sources */,
@@ -359,7 +407,10 @@
 				55065D5E2B35C66B00062EB4 /* NetworkTask.swift in Sources */,
 				55002ADD2B36DFE5008E5560 /* NSLocalizedStringPostfixOperator.swift in Sources */,
 				557A1FD62B36007C0043AFBA /* LocationMenuRequest.swift in Sources */,
+				55CCBC0C2B3864E500ACC2C8 /* UIViewController+ext.swift in Sources */,
 				55002AE02B36E10C008E5560 /* CHTextField.swift in Sources */,
+				55002AEE2B375260008E5560 /* SignInViewController.swift in Sources */,
+				55002AED2B375260008E5560 /* SignInRouter.swift in Sources */,
 				55065D6A2B35D35D00062EB4 /* SignInRequest.swift in Sources */,
 				557A1FC42B35E74A0043AFBA /* CoffeeLocation.swift in Sources */,
 				55065D712B35DAA900062EB4 /* SignUpRequest.swift in Sources */,
@@ -367,13 +418,18 @@
 				557A1FCE2B35FAA60043AFBA /* AuthTokenStorage.swift in Sources */,
 				557A1FD02B35FB5D0043AFBA /* KeychainConstants.swift in Sources */,
 				55002AE22B3741E7008E5560 /* CHButton.swift in Sources */,
+				55CCBC0A2B385EC300ACC2C8 /* UIBlockingProgressHUD.swift in Sources */,
 				55EDBCC72B3573AC00ACC778 /* SceneDelegate.swift in Sources */,
 				557A1FD82B3601E50043AFBA /* CoffeeLocationMenu.swift in Sources */,
 				55065D6F2B35D8B900062EB4 /* Token.swift in Sources */,
 				557A1FC62B35E7840043AFBA /* MapPoint.swift in Sources */,
+				55002AEC2B375260008E5560 /* SignInPresenter.swift in Sources */,
 				557A1FD22B35FE550043AFBA /* LocationMenuService.swift in Sources */,
 				55065D5A2B35C64000062EB4 /* NetworkClient.swift in Sources */,
+				55002AEF2B375260008E5560 /* SignInInteractor.swift in Sources */,
+				55002AEB2B375260008E5560 /* SignInModuleBuilder.swift in Sources */,
 				55065D5C2B35C65300062EB4 /* NetworkRequest.swift in Sources */,
+				55CCBC042B3842C400ACC2C8 /* SignInError.swift in Sources */,
 				55065D612B35CF2B00062EB4 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,6 +673,14 @@
 				minimumVersion = 20.0.0;
 			};
 		};
+		55CCBC052B385E0F00ACC2C8 /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -634,6 +698,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 557A1FC92B35FA5B0043AFBA /* XCRemoteSwiftPackageReference "keychain-swift" */;
 			productName = KeychainSwift;
+		};
+		55CCBC062B385E1000ACC2C8 /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55CCBC052B385E0F00ACC2C8 /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -6,6 +6,20 @@
 //
 
 struct Credentials {
-    let login: String
-    let password: String
+    var login: String
+    var password: String
+    
+    init(login: String, password: String) {
+        self.login = login
+        self.password = password
+    }
+    
+    init() {
+        login = ""
+        password = ""
+    }
+    
+    var isValid: Bool {
+        !(login.isEmpty && password.isEmpty)
+    }
 }

@@ -6,3 +6,20 @@
   
 */
 
+// MARK: - Sign In
+
+"signIn-title" = "Вход";
+"signIn-emailField-label" = "e-mail";
+"signIn-passwordField-label" = "Пароль";
+"signIn-submitButton" = "Войти";
+"signIn-signUpButton" = "Еще не зарегестрированы?";
+"signIn-successAlert-msg" = "Успешный вход";
+
+// MARK: - Errors
+
+"error-wrongCredentials" = "Неправильные данные";
+"error-unknown" = "Неизвестная ошибка";
+
+// MARK: - Alerts
+"alert-ok" = "Ок";
+"alert-ok" = "Ок";
