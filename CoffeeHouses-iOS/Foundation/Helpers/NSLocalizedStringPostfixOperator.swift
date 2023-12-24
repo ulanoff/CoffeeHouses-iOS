@@ -7,7 +7,7 @@
 
 import Foundation
 
-postfix operator <
-postfix func < (string: String) -> String {
+postfix operator ~
+postfix func ~ (string: String) -> String {
     return NSLocalizedString(string, comment: "")
 }
