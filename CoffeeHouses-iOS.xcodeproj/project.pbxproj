@@ -54,7 +54,6 @@
 		55EDBCC72B3573AC00ACC778 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EDBCC62B3573AC00ACC778 /* SceneDelegate.swift */; };
 		55EDBCCE2B3573AD00ACC778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55EDBCCD2B3573AD00ACC778 /* Assets.xcassets */; };
 		55EDBCD12B3573AD00ACC778 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55EDBCCF2B3573AD00ACC778 /* LaunchScreen.storyboard */; };
-		55EDBD082B35C42500ACC778 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EDBD072B35C42500ACC778 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,7 +104,6 @@
 		55EDBCCD2B3573AD00ACC778 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55EDBCD02B3573AD00ACC778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55EDBCD22B3573AD00ACC778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55EDBD072B35C42500ACC778 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +126,6 @@
 			children = (
 				55CCBC0D2B38666300ACC2C8 /* SignUpModule */,
 				55002AE52B37524B008E5560 /* SignInModule */,
-				55EDBD062B35C41800ACC778 /* TestModule */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -334,14 +331,6 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		55EDBD062B35C41800ACC778 /* TestModule */ = {
-			isa = PBXGroup;
-			children = (
-				55EDBD072B35C42500ACC778 /* TestViewController.swift */,
-			);
-			path = TestModule;
-			sourceTree = "<group>";
-		};
 		55EDBD0A2B35C4D500ACC778 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
@@ -454,7 +443,6 @@
 				55CCBC1C2B386C2000ACC2C8 /* SignUpError.swift in Sources */,
 				55065D712B35DAA900062EB4 /* SignUpRequest.swift in Sources */,
 				55CCBC1A2B3868E000ACC2C8 /* NewUserCredentials.swift in Sources */,
-				55EDBD082B35C42500ACC778 /* TestViewController.swift in Sources */,
 				55CCBC142B38667600ACC2C8 /* SignUpPresenter.swift in Sources */,
 				557A1FCE2B35FAA60043AFBA /* AuthTokenStorage.swift in Sources */,
 				55CCBC152B38667600ACC2C8 /* SignUpRouter.swift in Sources */,
