@@ -14,7 +14,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        cofigureNavBar()
         return true
+    }
+    
+    func cofigureNavBar() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .chGrayLight
+        appearance.titleTextAttributes = [.font: UIFont.systemFont(ofSize: 18, weight: .bold),
+                                          .foregroundColor: UIColor.chBrown]
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
     }
 
     // MARK: UISceneSession Lifecycle
