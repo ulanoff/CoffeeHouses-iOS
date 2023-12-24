@@ -43,6 +43,13 @@
 		55CCBC072B385E1000ACC2C8 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 55CCBC062B385E1000ACC2C8 /* ProgressHUD */; };
 		55CCBC0A2B385EC300ACC2C8 /* UIBlockingProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC092B385EC300ACC2C8 /* UIBlockingProgressHUD.swift */; };
 		55CCBC0C2B3864E500ACC2C8 /* UIViewController+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC0B2B3864E500ACC2C8 /* UIViewController+ext.swift */; };
+		55CCBC132B38667600ACC2C8 /* SignUpModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC0E2B38667600ACC2C8 /* SignUpModuleBuilder.swift */; };
+		55CCBC142B38667600ACC2C8 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC0F2B38667600ACC2C8 /* SignUpPresenter.swift */; };
+		55CCBC152B38667600ACC2C8 /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC102B38667600ACC2C8 /* SignUpRouter.swift */; };
+		55CCBC162B38667600ACC2C8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC112B38667600ACC2C8 /* SignUpViewController.swift */; };
+		55CCBC172B38667600ACC2C8 /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC122B38667600ACC2C8 /* SignUpInteractor.swift */; };
+		55CCBC1A2B3868E000ACC2C8 /* NewUserCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC192B3868E000ACC2C8 /* NewUserCredentials.swift */; };
+		55CCBC1C2B386C2000ACC2C8 /* SignUpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC1B2B386C2000ACC2C8 /* SignUpError.swift */; };
 		55EDBCC52B3573AC00ACC778 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EDBCC42B3573AC00ACC778 /* AppDelegate.swift */; };
 		55EDBCC72B3573AC00ACC778 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EDBCC62B3573AC00ACC778 /* SceneDelegate.swift */; };
 		55EDBCCE2B3573AD00ACC778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55EDBCCD2B3573AD00ACC778 /* Assets.xcassets */; };
@@ -85,6 +92,13 @@
 		55CCBC032B3842C400ACC2C8 /* SignInError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInError.swift; sourceTree = "<group>"; };
 		55CCBC092B385EC300ACC2C8 /* UIBlockingProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBlockingProgressHUD.swift; sourceTree = "<group>"; };
 		55CCBC0B2B3864E500ACC2C8 /* UIViewController+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ext.swift"; sourceTree = "<group>"; };
+		55CCBC0E2B38667600ACC2C8 /* SignUpModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModuleBuilder.swift; sourceTree = "<group>"; };
+		55CCBC0F2B38667600ACC2C8 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		55CCBC102B38667600ACC2C8 /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
+		55CCBC112B38667600ACC2C8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		55CCBC122B38667600ACC2C8 /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
+		55CCBC192B3868E000ACC2C8 /* NewUserCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserCredentials.swift; sourceTree = "<group>"; };
+		55CCBC1B2B386C2000ACC2C8 /* SignUpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpError.swift; sourceTree = "<group>"; };
 		55EDBCC12B3573AC00ACC778 /* CoffeeHouses-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoffeeHouses-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55EDBCC42B3573AC00ACC778 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55EDBCC62B3573AC00ACC778 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +126,7 @@
 		55002AC22B36D9BF008E5560 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				55CCBC0D2B38666300ACC2C8 /* SignUpModule */,
 				55002AE52B37524B008E5560 /* SignInModule */,
 				55EDBD062B35C41800ACC778 /* TestModule */,
 			);
@@ -238,6 +253,28 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		55CCBC0D2B38666300ACC2C8 /* SignUpModule */ = {
+			isa = PBXGroup;
+			children = (
+				55CCBC182B3868CB00ACC2C8 /* Models */,
+				55CCBC0E2B38667600ACC2C8 /* SignUpModuleBuilder.swift */,
+				55CCBC0F2B38667600ACC2C8 /* SignUpPresenter.swift */,
+				55CCBC102B38667600ACC2C8 /* SignUpRouter.swift */,
+				55CCBC112B38667600ACC2C8 /* SignUpViewController.swift */,
+				55CCBC122B38667600ACC2C8 /* SignUpInteractor.swift */,
+			);
+			path = SignUpModule;
+			sourceTree = "<group>";
+		};
+		55CCBC182B3868CB00ACC2C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				55CCBC192B3868E000ACC2C8 /* NewUserCredentials.swift */,
+				55CCBC1B2B386C2000ACC2C8 /* SignUpError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		55EDBCB82B3573AC00ACC778 = {
 			isa = PBXGroup;
 			children = (
@@ -257,9 +294,9 @@
 		55EDBCC32B3573AC00ACC778 /* CoffeeHouses-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				55EDBD002B35BB2F00ACC778 /* Application */,
 				55002ACE2B36DA35008E5560 /* UI */,
 				55065D6B2B35D3AB00062EB4 /* Constants */,
-				55EDBD002B35BB2F00ACC778 /* Application */,
 				55EDBD0A2B35C4D500ACC778 /* Foundation */,
 				55065D632B35D08200062EB4 /* Models */,
 				557A1FCC2B35FA660043AFBA /* Storage */,
@@ -410,22 +447,29 @@
 				55CCBC0C2B3864E500ACC2C8 /* UIViewController+ext.swift in Sources */,
 				55002AE02B36E10C008E5560 /* CHTextField.swift in Sources */,
 				55002AEE2B375260008E5560 /* SignInViewController.swift in Sources */,
+				55CCBC172B38667600ACC2C8 /* SignUpInteractor.swift in Sources */,
 				55002AED2B375260008E5560 /* SignInRouter.swift in Sources */,
 				55065D6A2B35D35D00062EB4 /* SignInRequest.swift in Sources */,
 				557A1FC42B35E74A0043AFBA /* CoffeeLocation.swift in Sources */,
+				55CCBC1C2B386C2000ACC2C8 /* SignUpError.swift in Sources */,
 				55065D712B35DAA900062EB4 /* SignUpRequest.swift in Sources */,
+				55CCBC1A2B3868E000ACC2C8 /* NewUserCredentials.swift in Sources */,
 				55EDBD082B35C42500ACC778 /* TestViewController.swift in Sources */,
+				55CCBC142B38667600ACC2C8 /* SignUpPresenter.swift in Sources */,
 				557A1FCE2B35FAA60043AFBA /* AuthTokenStorage.swift in Sources */,
+				55CCBC152B38667600ACC2C8 /* SignUpRouter.swift in Sources */,
 				557A1FD02B35FB5D0043AFBA /* KeychainConstants.swift in Sources */,
 				55002AE22B3741E7008E5560 /* CHButton.swift in Sources */,
 				55CCBC0A2B385EC300ACC2C8 /* UIBlockingProgressHUD.swift in Sources */,
 				55EDBCC72B3573AC00ACC778 /* SceneDelegate.swift in Sources */,
 				557A1FD82B3601E50043AFBA /* CoffeeLocationMenu.swift in Sources */,
+				55CCBC162B38667600ACC2C8 /* SignUpViewController.swift in Sources */,
 				55065D6F2B35D8B900062EB4 /* Token.swift in Sources */,
 				557A1FC62B35E7840043AFBA /* MapPoint.swift in Sources */,
 				55002AEC2B375260008E5560 /* SignInPresenter.swift in Sources */,
 				557A1FD22B35FE550043AFBA /* LocationMenuService.swift in Sources */,
 				55065D5A2B35C64000062EB4 /* NetworkClient.swift in Sources */,
+				55CCBC132B38667600ACC2C8 /* SignUpModuleBuilder.swift in Sources */,
 				55002AEF2B375260008E5560 /* SignInInteractor.swift in Sources */,
 				55002AEB2B375260008E5560 /* SignInModuleBuilder.swift in Sources */,
 				55065D5C2B35C65300062EB4 /* NetworkRequest.swift in Sources */,

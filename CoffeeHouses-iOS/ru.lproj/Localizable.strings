@@ -15,11 +15,21 @@
 "signIn-signUpButton" = "Еще не зарегестрированы?";
 "signIn-successAlert-msg" = "Успешный вход";
 
+// MARK: - Sign Up
+
+"signUp-title" = "Регистрация";
+"signUp-emailField-label" = "e-mail";
+"signUp-passwordField-label" = "Пароль";
+"signUp-passwordRepeatField-label" = "Повторите пароль";
+"signUp-submitButton" = "Регистрация";
+"signUp-successAlert-msg" = "Успешная регистрация";
+
 // MARK: - Errors
 
 "error-wrongCredentials" = "Неправильные данные";
+"error-accountAlreadyExists" = "Аккаунт с такими данными уже существует";
+"error-passwordsDoesntMatch" = "Введенные пароли не совпадают";
 "error-unknown" = "Неизвестная ошибка";
 
 // MARK: - Alerts
-"alert-ok" = "Ок";
 "alert-ok" = "Ок";
