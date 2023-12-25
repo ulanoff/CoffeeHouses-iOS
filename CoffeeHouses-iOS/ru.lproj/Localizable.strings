@@ -34,6 +34,11 @@
 
 "cafesMap-title" = "Карта";
 
+// MARK: - Cafe Menu
+
+"cafeMenu-title" = "Меню";
+"cafeMenu-paymentButton" = "Перейти к оплате";
+
 // MARK: - Errors
 
 "error-wrongCredentials" = "Неправильные данные";
@@ -44,11 +49,17 @@
 "error-locationUsageRestricted" = "Использование сервисов геолокации было ограничено. Приложение не может отображать расстояние до заведений.";
 "error-locationUsageDenied" = "Использование сервисов геолокации было отклонено. Приложение не может отображать расстояние до заведений.";
 "error-locationNotAvailable" = "Сервисы геолокации недоступны. Приложение не может отображать расстояние до заведений.";
+"error-emptyOrder" = "Оплачивать нечего :\\";
 
 // MARK: - Alerts
+
 "alert-ok" = "Ок";
 
 // MARK: - Units
 
 "unit-meter-short" = "м";
 "unit-kilometer-short" = "км";
+
+// MARK: - Currencies
+
+"currency-russianRouble-short" = "руб";
