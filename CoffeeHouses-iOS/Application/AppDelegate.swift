@@ -33,7 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func setupYandexMaps() {
-        YMKMapKit.setApiKey("979e2b93-ccaf-4cd0-96f9-bc1fc19936f4")
+        #warning("set your api key")
+        YMKMapKit.setApiKey("your-api-key")
         YMKMapKit.sharedInstance()
     }
 
