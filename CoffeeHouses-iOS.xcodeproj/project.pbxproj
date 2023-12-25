@@ -39,6 +39,7 @@
 		557A1FD42B35FFD60043AFBA /* CoffeeLocationMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A1FD32B35FFD60043AFBA /* CoffeeLocationMenuItem.swift */; };
 		557A1FD62B36007C0043AFBA /* LocationMenuRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A1FD52B36007C0043AFBA /* LocationMenuRequest.swift */; };
 		557A1FD82B3601E50043AFBA /* CoffeeLocationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A1FD72B3601E50043AFBA /* CoffeeLocationMenu.swift */; };
+		55BEF80B2B38B92C000A7096 /* UserLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BEF80A2B38B92C000A7096 /* UserLocationService.swift */; };
 		55CCBC042B3842C400ACC2C8 /* SignInError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC032B3842C400ACC2C8 /* SignInError.swift */; };
 		55CCBC072B385E1000ACC2C8 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 55CCBC062B385E1000ACC2C8 /* ProgressHUD */; };
 		55CCBC0A2B385EC300ACC2C8 /* UIBlockingProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC092B385EC300ACC2C8 /* UIBlockingProgressHUD.swift */; };
@@ -88,6 +89,7 @@
 		557A1FD32B35FFD60043AFBA /* CoffeeLocationMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeLocationMenuItem.swift; sourceTree = "<group>"; };
 		557A1FD52B36007C0043AFBA /* LocationMenuRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMenuRequest.swift; sourceTree = "<group>"; };
 		557A1FD72B3601E50043AFBA /* CoffeeLocationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeLocationMenu.swift; sourceTree = "<group>"; };
+		55BEF80A2B38B92C000A7096 /* UserLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationService.swift; sourceTree = "<group>"; };
 		55CCBC032B3842C400ACC2C8 /* SignInError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInError.swift; sourceTree = "<group>"; };
 		55CCBC092B385EC300ACC2C8 /* UIBlockingProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBlockingProgressHUD.swift; sourceTree = "<group>"; };
 		55CCBC0B2B3864E500ACC2C8 /* UIViewController+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ext.swift"; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				55065D602B35CF2B00062EB4 /* AuthService.swift */,
 				557A1FBE2B35E6120043AFBA /* LocationsService.swift */,
 				557A1FD12B35FE550043AFBA /* LocationMenuService.swift */,
+				55BEF80A2B38B92C000A7096 /* UserLocationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				557A1FD42B35FFD60043AFBA /* CoffeeLocationMenuItem.swift in Sources */,
 				55002AF12B375CF8008E5560 /* CHTextFieldWithLabel.swift in Sources */,
 				557A1FBF2B35E6120043AFBA /* LocationsService.swift in Sources */,
+				55BEF80B2B38B92C000A7096 /* UserLocationService.swift in Sources */,
 				557A1FC82B35E82E0043AFBA /* LocationRequest.swift in Sources */,
 				55EDBCC52B3573AC00ACC778 /* AppDelegate.swift in Sources */,
 				55065D6D2B35D3C600062EB4 /* ApiConstants.swift in Sources */,
@@ -621,6 +625,7 @@
 				DEVELOPMENT_TEAM = DSCAQDF936;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CoffeeHouses-iOS/Supporting/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to work properly.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -648,6 +653,7 @@
 				DEVELOPMENT_TEAM = DSCAQDF936;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CoffeeHouses-iOS/Supporting/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to work properly.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
