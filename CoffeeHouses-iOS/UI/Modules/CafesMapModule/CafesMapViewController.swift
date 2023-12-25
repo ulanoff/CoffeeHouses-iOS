@@ -28,7 +28,6 @@ final class CafesMapViewController: UIViewController {
         presenter?.viewDidLoad()
         setupUI()
         moveMapToUser()
-        addPlacemarks()
     }
 }
 
@@ -54,16 +53,18 @@ private extension CafesMapViewController {
         }
     }
     
-    func addPlacemarks() {
+    func addPlacemarks(_ placemarks: [CafePlacemark]) {
         let map = mapView.mapWindow.map
         let image: UIImage = .mapPoint
-        presenter?.cafePlacemarks.forEach{ placemarkModel in
+        placemarks.forEach{ placemarkModel in
             let placemark = map.mapObjects.addPlacemark()
             placemark.geometry = YMKPoint(
                 latitude: placemarkModel.location.latitude,
                 longitude: placemarkModel.location.longitude
             )
+            placemark.userData = placemarkModel.cafeId
             placemark.setIconWith(image)
+            placemark.addTapListener(with: self)
             placemark.setTextWithText(
                 placemarkModel.name,
                 style: YMKTextStyle(
@@ -112,10 +113,25 @@ private extension CafesMapViewController {
     }
 }
 
+// MARK: - YMKMapObjectTapListener
+
+extension CafesMapViewController: YMKMapObjectTapListener {
+    func onMapObjectTap(with mapObject: YMKMapObject, point: YMKPoint) -> Bool {
+        
+        
+        guard let id = mapObject.userData as? Int else {
+            assertionFailure()
+            return false
+        }
+        presenter?.cafePlacemarkTapped(cafeId: id)
+        return true
+    }
+}
+
 // MARK: - CafesMapViewProtocol
 
 extension CafesMapViewController: CafesMapViewProtocol {
     func showPlacemarks(_ placemarks: [CafePlacemark]) {
-        addPlacemarks()
+        addPlacemarks(placemarks)
     }
 }

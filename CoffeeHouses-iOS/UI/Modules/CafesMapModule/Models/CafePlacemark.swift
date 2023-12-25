@@ -8,6 +8,7 @@
 import Foundation
 
 struct CafePlacemark {
+    let cafeId: Int
     let name: String
     let location: Location
 }

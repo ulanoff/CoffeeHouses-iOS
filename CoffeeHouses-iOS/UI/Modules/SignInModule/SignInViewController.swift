@@ -94,6 +94,7 @@ private extension SignInViewController {
     }
     
     func signUpButtonTapped() {
+        presenter?.signUpButtonTapped()
     }
     
     func emailFieldChanged() {

@@ -8,6 +8,7 @@
 protocol CafesMapPresenterProtocol: AnyObject {
     var cafePlacemarks: [CafePlacemark] { get }
     func viewDidLoad()
+    func cafePlacemarkTapped(cafeId: Int)
 }
 
 final class CafesMapPresenter {
@@ -29,5 +30,9 @@ extension CafesMapPresenter: CafesMapPresenterProtocol {
     func viewDidLoad() {
         cafePlacemarks = converter.convertToCafePlacemarks(coffeeLocations: cafes)
         view?.showPlacemarks(cafePlacemarks)
+    }
+    
+    func cafePlacemarkTapped(cafeId: Int) {
+        router.goToCafeMenu(cafeId: cafeId)
     }
 }

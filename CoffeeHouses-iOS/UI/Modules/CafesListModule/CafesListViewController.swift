@@ -35,6 +35,7 @@ final class CafesListViewController: UIViewController {
     private lazy var mapButton: CHButton = {
         let button = CHButton()
         button.setTitle("cafesList-showOnMapButton"~, for: .normal)
+        button.addTarget(self, action: #selector(mapButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -56,6 +57,15 @@ final class CafesListViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         presenter?.viewDidLoad()
+    }
+}
+
+// MARK: - Event handlers
+
+@objc
+private extension CafesListViewController {
+    func mapButtonTapped() {
+        presenter?.mapButtonTapped()
     }
 }
 
@@ -146,5 +156,12 @@ extension CafesListViewController: UITableViewDataSource {
 extension CafesListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        guard let cell = tableView.cellForRow(at: indexPath) as? CafeTableCell,
+              let cafeId = cell.cafe?.id
+        else {
+            assertionFailure()
+            return
+        }
+        presenter?.cafeCellTapped(cafeId: cafeId)
     }
 }

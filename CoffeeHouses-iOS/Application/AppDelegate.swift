@@ -19,12 +19,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func cofigureNavBar() {
         let appearance = UINavigationBarAppearance()
+
         appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = .chGrayLight
         appearance.titleTextAttributes = [.font: UIFont.systemFont(ofSize: 18, weight: .bold),
                                           .foregroundColor: UIColor.chBrown]
+        UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffset(horizontal: -200, vertical: 0), for: UIBarMetrics.default)
+        UINavigationBar.appearance().tintColor = .chBrown
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        
+        UIViewController.swizzle()
     }
     
     private func setupYandexMaps() {

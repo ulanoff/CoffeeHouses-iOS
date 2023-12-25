@@ -26,12 +26,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
         let navController = UINavigationController()
-        let paymentModule = PaymentModuleBuilder.build(order: [
-            MenuItem(id: 1, name: "Эспрессо", price: 300, imageURL: URL(string: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Espresso_and_napolitains.jpg")!, quantity: 2),
-            MenuItem(id: 1, name: "Капучино", price: 300, imageURL: URL(string: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Espresso_and_napolitains.jpg")!, quantity: 1),
-            MenuItem(id: 1, name: "Латте", price: 300, imageURL: URL(string: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Espresso_and_napolitains.jpg")!, quantity: 1)
-        ])
-        navController.pushViewController(paymentModule, animated: false)
+          
+        if let token = AuthTokenStorageImpl().token {
+            let cafesListModule = CafesListModuleBuilder.build(authToken: token, nc: navController)
+            navController.pushViewController(cafesListModule, animated: false)
+        } else {
+            let signInModule = SignInModuleBuilder.build(nc: navController)
+            navController.pushViewController(signInModule, animated: true)
+        }
+        
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
     }

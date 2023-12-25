@@ -12,6 +12,8 @@ protocol CafesListPresenterProtocol: AnyObject {
     func cafesLoadingError(error: Error)
     func convertertingCompleted(cafes: [Cafe])
     func convertertingCompletedWithLocationError(cafes: [Cafe], error: LocationError)
+    func cafeCellTapped(cafeId: Int)
+    func mapButtonTapped()
 }
 
 final class CafesListPresenter {
@@ -20,6 +22,7 @@ final class CafesListPresenter {
     var interactor: CafesListInteractorProtocol
     private let cafeConverter: CafesListCafeConverterProtocol
     
+    private var coffeeLocations: [CoffeeLocation] = []
     var cafes: [Cafe] = []
 
     init(interactor: CafesListInteractorProtocol, router: CafesListRouterProtocol, cafeConverter: CafesListCafeConverterProtocol) {
@@ -49,6 +52,7 @@ extension CafesListPresenter: CafesListPresenterProtocol {
     }
     
     func cafesLoaded(locations: [CoffeeLocation]) {
+        self.coffeeLocations = locations
         cafeConverter.convertCoffeeLocationsToCafeModels(coffeLocations: locations)
     }
     
@@ -58,8 +62,7 @@ extension CafesListPresenter: CafesListPresenterProtocol {
             switch error {
             case .httpStatusCode(let code):
                 if code == 401 {
-                    // TODO: - Go to SignIn screen
-                    view?.showError(error: CafesListError.unauthorized)
+                    router.showAuth()
                 } else {
                     view?.showError(error: CafesListError.unknownError)
                 }
@@ -69,5 +72,14 @@ extension CafesListPresenter: CafesListPresenterProtocol {
         } else {
             view?.showError(error: CafesListError.unknownError)
         }
+    }
+    
+    func mapButtonTapped() {
+        router.goToMap(cafes: coffeeLocations)
+    }
+    
+    
+    func cafeCellTapped(cafeId: Int) {
+        router.goToCafeMenu(cafeId: cafeId)
     }
 }

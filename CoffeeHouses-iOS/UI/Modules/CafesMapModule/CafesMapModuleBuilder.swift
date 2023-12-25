@@ -8,14 +8,13 @@
 import UIKit
 
 final class CafesMapModuleBuilder {
-    static func build(cafes: [CoffeeLocation]) -> CafesMapViewController {
+    static func build(cafes: [CoffeeLocation], nc: UINavigationController) -> CafesMapViewController {
         let converter = CafesMapConverter()
-        let router = CafesMapRouter()
+        let router = CafesMapRouter(navigationController: nc)
         let presenter = CafesMapPresenter(router: router, converter: converter, cafes: cafes)
         let viewController = CafesMapViewController()
         presenter.view  = viewController
         viewController.presenter = presenter
-        router.viewController = viewController
         return viewController
     }
 }

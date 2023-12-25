@@ -34,11 +34,11 @@ final class CafesListCafeConverter: NSObject, CafesListCafeConverterProtocol {
                             longitude: CLLocationDegrees(cafeLongitudeDouble)
                         )
                         let distance = userLocation.distance(from: cafeCoordinates)
-                        return Cafe(name: coffeeLocation.name, distance: distance)
+                        return Cafe(id: coffeeLocation.id, name: coffeeLocation.name, distance: distance)
                     }
                 )
             case .failure(let error):
-                let cafes = coffeLocations.map { Cafe(name: $0.name, distance: 0) }
+                let cafes = coffeLocations.map { Cafe(id: $0.id, name: $0.name, distance: 0) }
                 presenter?.convertertingCompletedWithLocationError(cafes: cafes, error: error)
             }
         }

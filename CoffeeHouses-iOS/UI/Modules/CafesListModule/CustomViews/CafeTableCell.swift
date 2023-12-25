@@ -10,7 +10,7 @@ import SnapKit
 
 final class CafeTableCell: UITableViewCell {
     static let reuseIdentifier = "CafeTableCell"
-    
+    var cafe: Cafe?
     // MARK: - UI Elements
     
     private lazy var cafeNameLabel: UILabel = {
@@ -68,6 +68,7 @@ final class CafeTableCell: UITableViewCell {
     // MARK: - Public Methods
 
     func configure(with cafe: Cafe) {
+        self.cafe = cafe
         let distanceString = makeDistanceString(cafe.distance)
         let fromYouString = "cafesList-distancePostfix"~
         cafeNameLabel.text = cafe.name

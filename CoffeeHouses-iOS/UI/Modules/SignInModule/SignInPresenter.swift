@@ -11,6 +11,7 @@ protocol SignInPresenterProtocol: AnyObject {
     func signInButtonTapped()
     func authTokenRecieved(token: String)
     func authError(error: Error)
+    func signUpButtonTapped()
 }
 
 final class SignInPresenter {
@@ -47,7 +48,8 @@ extension SignInPresenter: SignInPresenterProtocol {
     func authTokenRecieved(token: String) {
         tokenStorage.setToken(token)
         view?.hideLoader()
-        view?.showSuccess()
+//        view?.showSuccess()
+        router.showMain(token: token)
     }
     
     func authError(error: Error) {
@@ -66,5 +68,9 @@ extension SignInPresenter: SignInPresenterProtocol {
         } else {
             view?.showError(error: .unknownError)
         }
+    }
+    
+    func signUpButtonTapped() {
+        router.goToSignUp()
     }
 }

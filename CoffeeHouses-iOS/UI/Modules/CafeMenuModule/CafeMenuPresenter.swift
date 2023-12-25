@@ -37,7 +37,7 @@ extension CafeMenuPresenter: CafeMenuPresenterProtocol {
     func paymentButtonTapped() {
         let order = menuItems.filter { $0.quantity > 0 }
         if order.count > 0 {
-            // TODO: - Go to payment screen
+            router.goToPayment(order: order)
         } else {
             view?.showError(error: CafeMenuError.emptyOrder)
         }

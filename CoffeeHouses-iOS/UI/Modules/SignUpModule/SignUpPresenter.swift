@@ -43,7 +43,6 @@ extension SignUpPresenter: SignUpPresenterProtocol {
     }
     
     func signUpButtonTapped() {
-        print(newUserCredentials)
         if newUserCredentials.isValid {
             view?.showLoader()
             let credentials = Credentials(
@@ -60,6 +59,7 @@ extension SignUpPresenter: SignUpPresenterProtocol {
         tokenStorage.setToken(token)
         view?.hideLoader()
         view?.showSuccess()
+        router.showMain(token: token)
     }
     
     func authError(error: Error) {

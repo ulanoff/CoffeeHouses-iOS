@@ -8,6 +8,7 @@
 import Foundation
 
 struct Cafe {
+    let id: Int
     let name: String
     let distance: Double
 }
