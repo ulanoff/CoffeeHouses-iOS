@@ -86,7 +86,7 @@ private extension CafesMapViewController {
             with: YMKCameraPosition(
                 target: point,
                 zoom: 10,
-                azimuth: 150,
+                azimuth: 0,
                 tilt: 30
             ),
             animation: YMKAnimation(

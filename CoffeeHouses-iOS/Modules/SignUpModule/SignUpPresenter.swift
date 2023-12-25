@@ -58,7 +58,6 @@ extension SignUpPresenter: SignUpPresenterProtocol {
     func authTokenRecieved(token: String) {
         tokenStorage.setToken(token)
         view?.hideLoader()
-        view?.showSuccess()
         router.showMain(token: token)
     }
     

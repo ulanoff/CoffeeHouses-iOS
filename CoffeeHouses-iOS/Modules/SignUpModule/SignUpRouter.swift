@@ -24,6 +24,6 @@ final class SignUpRouter: SignUpRouterProtocol {
             return
         }
         let cafesListModule = CafesListModuleBuilder.build(authToken: token, nc: navigationController)
-        navigationController.viewControllers = [cafesListModule]
+        navigationController.setViewControllers([cafesListModule], animated: true)
     }
 }
