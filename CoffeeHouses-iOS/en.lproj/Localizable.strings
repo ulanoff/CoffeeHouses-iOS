@@ -6,64 +6,66 @@
   
 */
 
-"signIn-title" = "Sign In";
-"signIn-emailField-label" = "E-mail";
-"signIn-passwordField-label" = "Password";
-"signIn-submitButton" = "Sign In";
-"signIn-signUpButton" = "Not registered yet?";
-"signIn-successAlert-msg" = "Successful Sign In";
+// MARK: - Sign In
+
+"signIn-title" = "Вход";
+"signIn-emailField-label" = "e-mail";
+"signIn-passwordField-label" = "Пароль";
+"signIn-submitButton" = "Войти";
+"signIn-signUpButton" = "Еще не зарегестрированы?";
+"signIn-successAlert-msg" = "Успешный вход";
 
 // MARK: - Sign Up
 
-"signUp-title" = "Registration";
-"signUp-emailField-label" = "E-mail";
-"signUp-passwordField-label" = "Password";
-"signUp-passwordRepeatField-label" = "Repeat Password";
-"signUp-submitButton" = "Register";
-"signUp-successAlert-msg" = "Successful Registration";
+"signUp-title" = "Регистрация";
+"signUp-emailField-label" = "e-mail";
+"signUp-passwordField-label" = "Пароль";
+"signUp-passwordRepeatField-label" = "Повторите пароль";
+"signUp-submitButton" = "Регистрация";
+"signUp-successAlert-msg" = "Успешная регистрация";
 
 // MARK: - Cafes List
 
-"cafesList-title" = "Nearest Cafes";
-"cafesList-showOnMapButton" = "Show on Map";
-"cafesList-distancePostfix" = "away from you";
+"cafesList-title" = "Ближайшие кофейни";
+"cafesList-showOnMapButton" = "На карте";
+"cafesList-distancePostfix" = "от вас";
 
 // MARK: - Cafes Map
 
-"cafesMap-title" = "Map";
+"cafesMap-title" = "Карта";
 
 // MARK: - Cafe Menu
 
-"cafeMenu-title" = "Menu";
-"cafeMenu-paymentButton" = "Proceed to Payment";
+"cafeMenu-title" = "Меню";
+"cafeMenu-paymentButton" = "Перейти к оплате";
 
 // MARK: - Payments
 
-"payment-title" = "Your Order";
-"payment-payButton" = "Pay";
-"payment-msgForUser" = "Order wait time \n15 minutes! \nThank you for choosing us!";
+"payment-title" = "Ваш заказ";
+"payment-payButton" = "Оплатить";
+"payment-msgForUser" = "Время ожидания заказа \n15 минут! \nСпасибо, что выбрали нас!";
 
 // MARK: - Errors
 
-"error-wrongCredentials" = "Incorrect credentials";
-"error-accountAlreadyExists" = "An account with these credentials already exists";
-"error-passwordsDoesntMatch" = "Entered passwords do not match";
-"error-unknown" = "Unknown error";
-"error-unauthorized" = "Authorization token has expired - you need to log in again.";
-"error-locationUsageRestricted" = "The use of location services has been restricted. The app cannot display the distance to establishments.";
-"error-locationUsageDenied" = "The use of location services has been denied. The app cannot display the distance to establishments.";
-"error-locationNotAvailable" = "Location services are not available. The app cannot display the distance to establishments.";
-"error-emptyOrder" = "There's nothing to pay for :\\";
+"error-wrongCredentials" = "Неправильные данные";
+"error-accountAlreadyExists" = "Аккаунт с такими данными уже существует";
+"error-passwordsDoesntMatch" = "Введенные пароли не совпадают";
+"error-unknown" = "Неизвестная ошибка";
+"error-unauthorized" = "Время действия токена авторизации истекло - вам нужно снова войти в аккаунт.";
+"error-locationUsageRestricted" = "Использование сервисов геолокации было ограничено. Приложение не может отображать расстояние до заведений.";
+"error-locationUsageDenied" = "Использование сервисов геолокации было отклонено. Приложение не может отображать расстояние до заведений.";
+"error-locationNotAvailable" = "Сервисы геолокации недоступны. Приложение не может отображать расстояние до заведений.";
+"error-emptyOrder" = "Оплачивать нечего :\\";
 
 // MARK: - Alerts
 
-"alert-ok" = "OK";
+"alert-ok" = "Ок";
 
 // MARK: - Units
 
-"unit-meter-short" = "m";
-"unit-kilometer-short" = "km";
+"unit-meter-short" = "м";
+"unit-kilometer-short" = "км";
 
 // MARK: - Currencies
 
-"currency-russianRouble-short" = "RUB";
+"currency-russianRouble-short" = "руб";

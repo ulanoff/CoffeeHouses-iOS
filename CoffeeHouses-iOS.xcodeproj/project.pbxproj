@@ -89,7 +89,6 @@
 
 /* Begin PBXFileReference section */
 		55002AD72B36DF4E008E5560 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		55002AD92B36DF79008E5560 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		55002ADA2B36DF79008E5560 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		55002ADC2B36DFE5008E5560 /* NSLocalizedStringPostfixOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLocalizedStringPostfixOperator.swift; sourceTree = "<group>"; };
 		55002ADF2B36E10C008E5560 /* CHTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHTextField.swift; sourceTree = "<group>"; };
@@ -134,6 +133,7 @@
 		55874C462B39DD1B00905882 /* PaymentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentRouter.swift; sourceTree = "<group>"; };
 		55874C472B39DD1B00905882 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		55874C4F2B39DDFF00905882 /* OrderTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableCell.swift; sourceTree = "<group>"; };
+		55874C512B3A0E7D00905882 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		559E0F4E2B39746700E8E070 /* CafesListError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesListError.swift; sourceTree = "<group>"; };
 		559E0F5B2B397D5200E8E070 /* CafesMapModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesMapModuleBuilder.swift; sourceTree = "<group>"; };
 		559E0F5C2B397D5200E8E070 /* CafesMapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesMapPresenter.swift; sourceTree = "<group>"; };
@@ -571,7 +571,7 @@
 			};
 			buildConfigurationList = 55EDBCBC2B3573AC00ACC778 /* Build configuration list for PBXProject "CoffeeHouses-iOS" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ru;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -742,7 +742,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				55EDBCD02B3573AD00ACC778 /* Base */,
-				55002AD92B36DF79008E5560 /* ru */,
+				55874C512B3A0E7D00905882 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
