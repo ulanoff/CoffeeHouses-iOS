@@ -27,6 +27,21 @@ enum LocationError: Error, LocalizedError {
 struct Location {
     let latitude: CLLocationDegrees
     let longitude: CLLocationDegrees
+    
+    init(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
+        self.latitude = latitude
+        self.longitude = longitude
+    }
+    
+    init?(mapPoint: MapPoint) {
+        guard let clLatitude = CLLocationDegrees(mapPoint.latitude),
+              let clLongitude = CLLocationDegrees(mapPoint.longitude)
+        else {
+            return nil
+        }
+        latitude = clLatitude
+        longitude = clLongitude
+    }
 }
 
 typealias LocationCompletion =  (Result<Location, LocationError>) -> Void

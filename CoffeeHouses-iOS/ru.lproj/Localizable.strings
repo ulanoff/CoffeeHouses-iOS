@@ -30,6 +30,10 @@
 "cafesList-showOnMapButton" = "На карте";
 "cafesList-distancePostfix" = "от вас";
 
+// MARK: - Cafes Map
+
+"cafesMap-title" = "Карта";
+
 // MARK: - Errors
 
 "error-wrongCredentials" = "Неправильные данные";

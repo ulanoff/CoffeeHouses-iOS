@@ -6,19 +6,18 @@
 //
 
 import UIKit
+import YandexMapsMobile
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         cofigureNavBar()
+        setupYandexMaps()
         return true
     }
     
-    func cofigureNavBar() {
+    private func cofigureNavBar() {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = .chGrayLight
@@ -26,6 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                           .foregroundColor: UIColor.chBrown]
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
+    }
+    
+    private func setupYandexMaps() {
+        YMKMapKit.setApiKey("979e2b93-ccaf-4cd0-96f9-bc1fc19936f4")
+        YMKMapKit.sharedInstance()
     }
 
     // MARK: UISceneSession Lifecycle

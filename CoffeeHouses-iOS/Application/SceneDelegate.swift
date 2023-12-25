@@ -26,13 +26,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
         let navController = UINavigationController()
-        if let token = MockAuthTokenStorage().token {
-            let module = CafesListModuleBuilder.build(authToken: token)
-            navController.pushViewController(module, animated: false)
-        } else {
-            let module = SignInModuleBuilder.build()
-            navController.pushViewController(module, animated: false)
-        }
+        let cafesMapModule = CafesMapModuleBuilder.build(cafes: [
+            CoffeeLocation(id: 1, name: "Арома", point: MapPoint(latitude: "44.43000000000000", longitude: "44.43000000000000")),
+            CoffeeLocation(id: 2, name: "Кофе есть", point: MapPoint(latitude: "44.72452500000000", longitude: "44.72452500000000")),
+            CoffeeLocation(id: 3, name: "ЧайКофф", point: MapPoint(latitude: "44.83000000000000", longitude: "44.83000000000000")),
+        ])
+        navController.pushViewController(cafesMapModule, animated: false)
+//        if let token = MockAuthTokenStorage().token {
+//            let module = CafesListModuleBuilder.build(authToken: token)
+//            navController.pushViewController(module, animated: false)
+//        } else {
+//            let module = SignInModuleBuilder.build()
+//            navController.pushViewController(module, animated: false)
+//        }
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
     }
