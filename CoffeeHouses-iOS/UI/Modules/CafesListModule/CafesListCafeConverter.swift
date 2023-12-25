@@ -13,7 +13,7 @@ protocol CafesListCafeConverterProtocol: AnyObject {
 }
 
 final class CafesListCafeConverter: NSObject, CafesListCafeConverterProtocol {
-    var presenter: CafesListPresenterProtocol?
+    weak var presenter: CafesListPresenterProtocol?
     private let userLocationService = UserLocationService.shared
     
     func convertCoffeeLocationsToCafeModels(coffeLocations: [CoffeeLocation]) {
