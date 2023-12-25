@@ -6,3 +6,64 @@
   
 */
 
+"signIn-title" = "Sign In";
+"signIn-emailField-label" = "E-mail";
+"signIn-passwordField-label" = "Password";
+"signIn-submitButton" = "Sign In";
+"signIn-signUpButton" = "Not registered yet?";
+"signIn-successAlert-msg" = "Successful Sign In";
+
+// MARK: - Sign Up
+
+"signUp-title" = "Registration";
+"signUp-emailField-label" = "E-mail";
+"signUp-passwordField-label" = "Password";
+"signUp-passwordRepeatField-label" = "Repeat Password";
+"signUp-submitButton" = "Register";
+"signUp-successAlert-msg" = "Successful Registration";
+
+// MARK: - Cafes List
+
+"cafesList-title" = "Nearest Cafes";
+"cafesList-showOnMapButton" = "Show on Map";
+"cafesList-distancePostfix" = "away from you";
+
+// MARK: - Cafes Map
+
+"cafesMap-title" = "Map";
+
+// MARK: - Cafe Menu
+
+"cafeMenu-title" = "Menu";
+"cafeMenu-paymentButton" = "Proceed to Payment";
+
+// MARK: - Payments
+
+"payment-title" = "Your Order";
+"payment-payButton" = "Pay";
+"payment-msgForUser" = "Order wait time \n15 minutes! \nThank you for choosing us!";
+
+// MARK: - Errors
+
+"error-wrongCredentials" = "Incorrect credentials";
+"error-accountAlreadyExists" = "An account with these credentials already exists";
+"error-passwordsDoesntMatch" = "Entered passwords do not match";
+"error-unknown" = "Unknown error";
+"error-unauthorized" = "Authorization token has expired - you need to log in again.";
+"error-locationUsageRestricted" = "The use of location services has been restricted. The app cannot display the distance to establishments.";
+"error-locationUsageDenied" = "The use of location services has been denied. The app cannot display the distance to establishments.";
+"error-locationNotAvailable" = "Location services are not available. The app cannot display the distance to establishments.";
+"error-emptyOrder" = "There's nothing to pay for :\\";
+
+// MARK: - Alerts
+
+"alert-ok" = "OK";
+
+// MARK: - Units
+
+"unit-meter-short" = "m";
+"unit-kilometer-short" = "km";
+
+// MARK: - Currencies
+
+"currency-russianRouble-short" = "RUB";
