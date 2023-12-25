@@ -26,10 +26,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
         let navController = UINavigationController()
-        if let token = MockAuthTokenStorage().token {
-            let cafesMenuModule = CafeMenuModuleBuilder.build(cafeId: 2, authToken: token)
-            navController.pushViewController(cafesMenuModule, animated: false)
-        }
+        let paymentModule = PaymentModuleBuilder.build(order: [
+            MenuItem(id: 1, name: "Эспрессо", price: 300, imageURL: URL(string: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Espresso_and_napolitains.jpg")!, quantity: 2),
+            MenuItem(id: 1, name: "Капучино", price: 300, imageURL: URL(string: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Espresso_and_napolitains.jpg")!, quantity: 1),
+            MenuItem(id: 1, name: "Латте", price: 300, imageURL: URL(string: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Espresso_and_napolitains.jpg")!, quantity: 1)
+        ])
+        navController.pushViewController(paymentModule, animated: false)
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
     }

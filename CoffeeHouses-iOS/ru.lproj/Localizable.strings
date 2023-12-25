@@ -39,6 +39,12 @@
 "cafeMenu-title" = "Меню";
 "cafeMenu-paymentButton" = "Перейти к оплате";
 
+// MARK: - Payments
+
+"payment-title" = "Ваш заказ";
+"payment-payButton" = "Оплатить";
+"payment-msgForUser" = "Время ожидания заказа \n15 минут! \nСпасибо, что выбрали нас!";
+
 // MARK: - Errors
 
 "error-wrongCredentials" = "Неправильные данные";

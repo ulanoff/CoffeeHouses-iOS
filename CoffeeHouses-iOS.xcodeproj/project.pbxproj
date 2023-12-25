@@ -50,6 +50,11 @@
 		55874C3D2B39AAA600905882 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55874C3C2B39AAA600905882 /* MenuItem.swift */; };
 		55874C402B39AC2900905882 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 55874C3F2B39AC2900905882 /* Kingfisher */; };
 		55874C422B39D45100905882 /* CafeMenuError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55874C412B39D45100905882 /* CafeMenuError.swift */; };
+		55874C492B39DD1B00905882 /* PaymentModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55874C442B39DD1B00905882 /* PaymentModuleBuilder.swift */; };
+		55874C4A2B39DD1B00905882 /* PaymentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55874C452B39DD1B00905882 /* PaymentPresenter.swift */; };
+		55874C4B2B39DD1B00905882 /* PaymentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55874C462B39DD1B00905882 /* PaymentRouter.swift */; };
+		55874C4C2B39DD1B00905882 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55874C472B39DD1B00905882 /* PaymentViewController.swift */; };
+		55874C502B39DDFF00905882 /* OrderTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55874C4F2B39DDFF00905882 /* OrderTableCell.swift */; };
 		559E0F4F2B39746700E8E070 /* CafesListError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559E0F4E2B39746700E8E070 /* CafesListError.swift */; };
 		559E0F602B397D5200E8E070 /* CafesMapModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559E0F5B2B397D5200E8E070 /* CafesMapModuleBuilder.swift */; };
 		559E0F612B397D5200E8E070 /* CafesMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559E0F5C2B397D5200E8E070 /* CafesMapPresenter.swift */; };
@@ -124,6 +129,11 @@
 		55874C362B39A3F200905882 /* CafeMenuCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeMenuCollectionCell.swift; sourceTree = "<group>"; };
 		55874C3C2B39AAA600905882 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		55874C412B39D45100905882 /* CafeMenuError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeMenuError.swift; sourceTree = "<group>"; };
+		55874C442B39DD1B00905882 /* PaymentModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentModuleBuilder.swift; sourceTree = "<group>"; };
+		55874C452B39DD1B00905882 /* PaymentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentPresenter.swift; sourceTree = "<group>"; };
+		55874C462B39DD1B00905882 /* PaymentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentRouter.swift; sourceTree = "<group>"; };
+		55874C472B39DD1B00905882 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		55874C4F2B39DDFF00905882 /* OrderTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableCell.swift; sourceTree = "<group>"; };
 		559E0F4E2B39746700E8E070 /* CafesListError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesListError.swift; sourceTree = "<group>"; };
 		559E0F5B2B397D5200E8E070 /* CafesMapModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesMapModuleBuilder.swift; sourceTree = "<group>"; };
 		559E0F5C2B397D5200E8E070 /* CafesMapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesMapPresenter.swift; sourceTree = "<group>"; };
@@ -187,6 +197,7 @@
 		55002AC22B36D9BF008E5560 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				55874C432B39DD0900905882 /* PaymentModule */,
 				55874C2A2B399E9400905882 /* CafeMenuModule */,
 				559E0F502B397D2000E8E070 /* CafesMapModule */,
 				55CCBC1D2B3873A700ACC2C8 /* CafesListModule */,
@@ -346,6 +357,26 @@
 				55874C412B39D45100905882 /* CafeMenuError.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		55874C432B39DD0900905882 /* PaymentModule */ = {
+			isa = PBXGroup;
+			children = (
+				55874C4E2B39DDEE00905882 /* CustomViews */,
+				55874C442B39DD1B00905882 /* PaymentModuleBuilder.swift */,
+				55874C452B39DD1B00905882 /* PaymentPresenter.swift */,
+				55874C462B39DD1B00905882 /* PaymentRouter.swift */,
+				55874C472B39DD1B00905882 /* PaymentViewController.swift */,
+			);
+			path = PaymentModule;
+			sourceTree = "<group>";
+		};
+		55874C4E2B39DDEE00905882 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				55874C4F2B39DDFF00905882 /* OrderTableCell.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		559E0F502B397D2000E8E070 /* CafesMapModule */ = {
@@ -638,9 +669,11 @@
 				55874C302B399F8800905882 /* CafeMenuModuleBuilder.swift in Sources */,
 				55874C372B39A3F200905882 /* CafeMenuCollectionCell.swift in Sources */,
 				55BEF80B2B38B92C000A7096 /* UserLocationService.swift in Sources */,
+				55874C4C2B39DD1B00905882 /* PaymentViewController.swift in Sources */,
 				55874C272B398F2E00905882 /* CafePlacemark.swift in Sources */,
 				557A1FC82B35E82E0043AFBA /* LocationRequest.swift in Sources */,
 				55EDBCC52B3573AC00ACC778 /* AppDelegate.swift in Sources */,
+				55874C492B39DD1B00905882 /* PaymentModuleBuilder.swift in Sources */,
 				55065D6D2B35D3C600062EB4 /* ApiConstants.swift in Sources */,
 				55065D5E2B35C66B00062EB4 /* NetworkTask.swift in Sources */,
 				55002ADD2B36DFE5008E5560 /* NSLocalizedStringPostfixOperator.swift in Sources */,
@@ -649,6 +682,7 @@
 				55002AE02B36E10C008E5560 /* CHTextField.swift in Sources */,
 				55002AEE2B375260008E5560 /* SignInViewController.swift in Sources */,
 				55CCBC172B38667600ACC2C8 /* SignUpInteractor.swift in Sources */,
+				55874C4A2B39DD1B00905882 /* PaymentPresenter.swift in Sources */,
 				55002AED2B375260008E5560 /* SignInRouter.swift in Sources */,
 				55874C332B399F8800905882 /* CafeMenuViewController.swift in Sources */,
 				55065D6A2B35D35D00062EB4 /* SignInRequest.swift in Sources */,
@@ -673,6 +707,7 @@
 				557A1FD82B3601E50043AFBA /* CoffeeLocationMenu.swift in Sources */,
 				55CCBC162B38667600ACC2C8 /* SignUpViewController.swift in Sources */,
 				559E0F612B397D5200E8E070 /* CafesMapPresenter.swift in Sources */,
+				55874C4B2B39DD1B00905882 /* PaymentRouter.swift in Sources */,
 				55874C3D2B39AAA600905882 /* MenuItem.swift in Sources */,
 				55065D6F2B35D8B900062EB4 /* Token.swift in Sources */,
 				557A1FC62B35E7840043AFBA /* MapPoint.swift in Sources */,
@@ -687,6 +722,7 @@
 				55002AEF2B375260008E5560 /* SignInInteractor.swift in Sources */,
 				55CCBC232B3873DC00ACC2C8 /* CafesListModuleBuilder.swift in Sources */,
 				55002AEB2B375260008E5560 /* SignInModuleBuilder.swift in Sources */,
+				55874C502B39DDFF00905882 /* OrderTableCell.swift in Sources */,
 				55CCBC272B3873DC00ACC2C8 /* CafesListInteractor.swift in Sources */,
 				55065D5C2B35C65300062EB4 /* NetworkRequest.swift in Sources */,
 				55874C322B399F8800905882 /* CafeMenuRouter.swift in Sources */,
