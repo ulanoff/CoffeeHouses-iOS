@@ -10,7 +10,14 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    
+    class MockAuthTokenStorage: AuthTokenStorage {
+        var token: String? = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJBdXRoZW50aWNhdGlvbiIsImlzcyI6ImNvZmZlZSBiYWNrZW5kIiwiaWQiOjk1LCJleHAiOjE3MDM0OTc0Mjl9.FAcy-k3TDDqA4FjRhxeqL-VijiJv0lQ8RlA9xc40A8A"
+        
+        func setToken(_ token: String) {
+            return
+        }
+    }
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -19,8 +26,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
         let navController = UINavigationController()
-        let vc = SignUpModuleBuilder.build()
-        navController.pushViewController(vc, animated: false)
+        if let token = MockAuthTokenStorage().token {
+            let module = CafesListModuleBuilder.build(authToken: token)
+            navController.pushViewController(module, animated: false)
+        } else {
+            let module = SignInModuleBuilder.build()
+            navController.pushViewController(module, animated: false)
+        }
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
     }

@@ -39,6 +39,8 @@
 		557A1FD42B35FFD60043AFBA /* CoffeeLocationMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A1FD32B35FFD60043AFBA /* CoffeeLocationMenuItem.swift */; };
 		557A1FD62B36007C0043AFBA /* LocationMenuRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A1FD52B36007C0043AFBA /* LocationMenuRequest.swift */; };
 		557A1FD82B3601E50043AFBA /* CoffeeLocationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A1FD72B3601E50043AFBA /* CoffeeLocationMenu.swift */; };
+		559E0F4F2B39746700E8E070 /* CafesListError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559E0F4E2B39746700E8E070 /* CafesListError.swift */; };
+		55BEF8082B389B77000A7096 /* CafesListCafeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BEF8072B389B77000A7096 /* CafesListCafeConverter.swift */; };
 		55BEF80B2B38B92C000A7096 /* UserLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BEF80A2B38B92C000A7096 /* UserLocationService.swift */; };
 		55CCBC042B3842C400ACC2C8 /* SignInError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC032B3842C400ACC2C8 /* SignInError.swift */; };
 		55CCBC072B385E1000ACC2C8 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 55CCBC062B385E1000ACC2C8 /* ProgressHUD */; };
@@ -51,6 +53,13 @@
 		55CCBC172B38667600ACC2C8 /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC122B38667600ACC2C8 /* SignUpInteractor.swift */; };
 		55CCBC1A2B3868E000ACC2C8 /* NewUserCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC192B3868E000ACC2C8 /* NewUserCredentials.swift */; };
 		55CCBC1C2B386C2000ACC2C8 /* SignUpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC1B2B386C2000ACC2C8 /* SignUpError.swift */; };
+		55CCBC232B3873DC00ACC2C8 /* CafesListModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC1E2B3873DC00ACC2C8 /* CafesListModuleBuilder.swift */; };
+		55CCBC242B3873DC00ACC2C8 /* CafesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC1F2B3873DC00ACC2C8 /* CafesListPresenter.swift */; };
+		55CCBC252B3873DC00ACC2C8 /* CafesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC202B3873DC00ACC2C8 /* CafesListRouter.swift */; };
+		55CCBC262B3873DC00ACC2C8 /* CafesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC212B3873DC00ACC2C8 /* CafesListViewController.swift */; };
+		55CCBC272B3873DC00ACC2C8 /* CafesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC222B3873DC00ACC2C8 /* CafesListInteractor.swift */; };
+		55CCBC2A2B38787000ACC2C8 /* CafeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC292B38787000ACC2C8 /* CafeTableCell.swift */; };
+		55CCBC2D2B387B0800ACC2C8 /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCBC2C2B387B0800ACC2C8 /* Cafe.swift */; };
 		55EDBCC52B3573AC00ACC778 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EDBCC42B3573AC00ACC778 /* AppDelegate.swift */; };
 		55EDBCC72B3573AC00ACC778 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EDBCC62B3573AC00ACC778 /* SceneDelegate.swift */; };
 		55EDBCCE2B3573AD00ACC778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55EDBCCD2B3573AD00ACC778 /* Assets.xcassets */; };
@@ -89,6 +98,8 @@
 		557A1FD32B35FFD60043AFBA /* CoffeeLocationMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeLocationMenuItem.swift; sourceTree = "<group>"; };
 		557A1FD52B36007C0043AFBA /* LocationMenuRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMenuRequest.swift; sourceTree = "<group>"; };
 		557A1FD72B3601E50043AFBA /* CoffeeLocationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeLocationMenu.swift; sourceTree = "<group>"; };
+		559E0F4E2B39746700E8E070 /* CafesListError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesListError.swift; sourceTree = "<group>"; };
+		55BEF8072B389B77000A7096 /* CafesListCafeConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesListCafeConverter.swift; sourceTree = "<group>"; };
 		55BEF80A2B38B92C000A7096 /* UserLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationService.swift; sourceTree = "<group>"; };
 		55CCBC032B3842C400ACC2C8 /* SignInError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInError.swift; sourceTree = "<group>"; };
 		55CCBC092B385EC300ACC2C8 /* UIBlockingProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBlockingProgressHUD.swift; sourceTree = "<group>"; };
@@ -100,6 +111,13 @@
 		55CCBC122B38667600ACC2C8 /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
 		55CCBC192B3868E000ACC2C8 /* NewUserCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserCredentials.swift; sourceTree = "<group>"; };
 		55CCBC1B2B386C2000ACC2C8 /* SignUpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpError.swift; sourceTree = "<group>"; };
+		55CCBC1E2B3873DC00ACC2C8 /* CafesListModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesListModuleBuilder.swift; sourceTree = "<group>"; };
+		55CCBC1F2B3873DC00ACC2C8 /* CafesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesListPresenter.swift; sourceTree = "<group>"; };
+		55CCBC202B3873DC00ACC2C8 /* CafesListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesListRouter.swift; sourceTree = "<group>"; };
+		55CCBC212B3873DC00ACC2C8 /* CafesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesListViewController.swift; sourceTree = "<group>"; };
+		55CCBC222B3873DC00ACC2C8 /* CafesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesListInteractor.swift; sourceTree = "<group>"; };
+		55CCBC292B38787000ACC2C8 /* CafeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeTableCell.swift; sourceTree = "<group>"; };
+		55CCBC2C2B387B0800ACC2C8 /* Cafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe.swift; sourceTree = "<group>"; };
 		55EDBCC12B3573AC00ACC778 /* CoffeeHouses-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoffeeHouses-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55EDBCC42B3573AC00ACC778 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55EDBCC62B3573AC00ACC778 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +144,7 @@
 		55002AC22B36D9BF008E5560 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				55CCBC1D2B3873A700ACC2C8 /* CafesListModule */,
 				55CCBC0D2B38666300ACC2C8 /* SignUpModule */,
 				55002AE52B37524B008E5560 /* SignInModule */,
 			);
@@ -271,6 +290,38 @@
 			children = (
 				55CCBC192B3868E000ACC2C8 /* NewUserCredentials.swift */,
 				55CCBC1B2B386C2000ACC2C8 /* SignUpError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		55CCBC1D2B3873A700ACC2C8 /* CafesListModule */ = {
+			isa = PBXGroup;
+			children = (
+				55CCBC2B2B387AFF00ACC2C8 /* Models */,
+				55CCBC282B38785B00ACC2C8 /* CustomViews */,
+				55BEF8072B389B77000A7096 /* CafesListCafeConverter.swift */,
+				55CCBC1E2B3873DC00ACC2C8 /* CafesListModuleBuilder.swift */,
+				55CCBC1F2B3873DC00ACC2C8 /* CafesListPresenter.swift */,
+				55CCBC202B3873DC00ACC2C8 /* CafesListRouter.swift */,
+				55CCBC212B3873DC00ACC2C8 /* CafesListViewController.swift */,
+				55CCBC222B3873DC00ACC2C8 /* CafesListInteractor.swift */,
+			);
+			path = CafesListModule;
+			sourceTree = "<group>";
+		};
+		55CCBC282B38785B00ACC2C8 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				55CCBC292B38787000ACC2C8 /* CafeTableCell.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		55CCBC2B2B387AFF00ACC2C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				55CCBC2C2B387B0800ACC2C8 /* Cafe.swift */,
+				559E0F4E2B39746700E8E070 /* CafesListError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -444,6 +495,8 @@
 				55002AED2B375260008E5560 /* SignInRouter.swift in Sources */,
 				55065D6A2B35D35D00062EB4 /* SignInRequest.swift in Sources */,
 				557A1FC42B35E74A0043AFBA /* CoffeeLocation.swift in Sources */,
+				55CCBC2D2B387B0800ACC2C8 /* Cafe.swift in Sources */,
+				55CCBC2A2B38787000ACC2C8 /* CafeTableCell.swift in Sources */,
 				55CCBC1C2B386C2000ACC2C8 /* SignUpError.swift in Sources */,
 				55065D712B35DAA900062EB4 /* SignUpRequest.swift in Sources */,
 				55CCBC1A2B3868E000ACC2C8 /* NewUserCredentials.swift in Sources */,
@@ -451,20 +504,27 @@
 				557A1FCE2B35FAA60043AFBA /* AuthTokenStorage.swift in Sources */,
 				55CCBC152B38667600ACC2C8 /* SignUpRouter.swift in Sources */,
 				557A1FD02B35FB5D0043AFBA /* KeychainConstants.swift in Sources */,
+				55CCBC252B3873DC00ACC2C8 /* CafesListRouter.swift in Sources */,
 				55002AE22B3741E7008E5560 /* CHButton.swift in Sources */,
+				55BEF8082B389B77000A7096 /* CafesListCafeConverter.swift in Sources */,
 				55CCBC0A2B385EC300ACC2C8 /* UIBlockingProgressHUD.swift in Sources */,
 				55EDBCC72B3573AC00ACC778 /* SceneDelegate.swift in Sources */,
 				557A1FD82B3601E50043AFBA /* CoffeeLocationMenu.swift in Sources */,
 				55CCBC162B38667600ACC2C8 /* SignUpViewController.swift in Sources */,
 				55065D6F2B35D8B900062EB4 /* Token.swift in Sources */,
 				557A1FC62B35E7840043AFBA /* MapPoint.swift in Sources */,
+				55CCBC242B3873DC00ACC2C8 /* CafesListPresenter.swift in Sources */,
+				559E0F4F2B39746700E8E070 /* CafesListError.swift in Sources */,
 				55002AEC2B375260008E5560 /* SignInPresenter.swift in Sources */,
 				557A1FD22B35FE550043AFBA /* LocationMenuService.swift in Sources */,
 				55065D5A2B35C64000062EB4 /* NetworkClient.swift in Sources */,
 				55CCBC132B38667600ACC2C8 /* SignUpModuleBuilder.swift in Sources */,
 				55002AEF2B375260008E5560 /* SignInInteractor.swift in Sources */,
+				55CCBC232B3873DC00ACC2C8 /* CafesListModuleBuilder.swift in Sources */,
 				55002AEB2B375260008E5560 /* SignInModuleBuilder.swift in Sources */,
+				55CCBC272B3873DC00ACC2C8 /* CafesListInteractor.swift in Sources */,
 				55065D5C2B35C65300062EB4 /* NetworkRequest.swift in Sources */,
+				55CCBC262B3873DC00ACC2C8 /* CafesListViewController.swift in Sources */,
 				55CCBC042B3842C400ACC2C8 /* SignInError.swift in Sources */,
 				55065D612B35CF2B00062EB4 /* AuthService.swift in Sources */,
 			);
