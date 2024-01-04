@@ -1,4 +1,6 @@
 # Coffee Houses
+Требования:
+ - Xcode 15 +
 
 Установка:
  - Загрузите поды (pod insatll)
